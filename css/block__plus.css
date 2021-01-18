@@ -1,0 +1,16 @@
+.block__plus {
+    display: flex;
+    justify-content: space-between;
+}
+.block__plus-text {
+    display: flex;
+    max-width: 273px;
+}
+.block__plus-text::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-right: 8px;
+    background-image: url(./../img/section__info/image\ 75.png);
+}

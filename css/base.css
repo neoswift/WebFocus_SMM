@@ -1,0 +1,39 @@
+*, * {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+}
+p {
+    margin-bottom: 8px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4B4B4B;
+}
+
+.container {
+    max-width: 1206px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.liquid-button {
+    margin: auto;
+    font-weight: bold;
+}

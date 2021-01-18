@@ -1,0 +1,131 @@
+.header-nav {
+    border-bottom: 2px solid #FEBD29;
+}
+.container {
+}
+.header-nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logo {
+    
+}
+.logo__img {
+}
+.nav__list {
+
+}
+.list__link {
+    position: relative;
+    transition: all 0.6s;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #000000;
+}
+.list__link-arrow::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    width: 11px;
+    height: 6px;
+    background-image: url(./../img/header-nav/arrow.svg);
+    background-position: center;   
+}
+
+.list__link::before {
+    content: "";
+    width: 0;
+    height: 0.1em;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background: #FEBD29;
+    transition: all 0.3s;
+}
+
+.list__link:hover::before {
+    width: 100%;
+    left: 0;
+    background: #FEBD29;
+}
+.header-nav__search {
+}
+.header-nav__search-img {
+}
+.header-nav__phone {    
+    
+}
+
+.header-nav__phone {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    /* font-size: inherit; */
+    font-family: inherit;
+  }
+  .header-nav__phone {
+    width: 192px;
+    height: auto;
+  }
+  .header-nav__phone .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    background: #FEBD29;
+    border-radius: 26px;
+  }
+  .header-nav__phone .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #FEBD29;
+  }
+  .header-nav__phone .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 10px;
+    width: 18px;
+    height: 2px;
+    background: none;
+  }
+    .header-nav__phone-number {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: -7px;
+    left: -50px;
+    right: 0;
+    bottom: 0;
+    padding: 12px 0;
+    margin: 0 0 0 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #1E1C1C;
+  }
+  .header-nav__phone:hover .circle {
+    width: 90%;
+  }
+  .header-nav__phone:hover .circle .icon.arrow {
+    background: #FEBD29;
+    transform: translate(16px, 0);
+  }
+  .header-nav__phone:hover .header-nav__phone-number {
+    color: #fff;
+  }
