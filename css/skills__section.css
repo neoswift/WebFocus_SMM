@@ -1,0 +1,39 @@
+.skills__section {
+    margin-top: 200px;
+}
+.container {
+}
+.skills__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.skills__content,
+.skills__block-img {
+    max-width: 481px;
+}
+.skills__block-img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.skills__content-title {
+}
+.skills__content-text li {
+    position: relative;
+    margin-bottom: 14px;
+}
+li:before {
+    position: absolute;
+    content: "";
+    left: -35px;
+    top: 8px;
+    width: 15px;
+    border-top: 2px solid #FEBD29;
+}
+.skills__content-img {
+    width: 120px;
+    height: 120px;
+    animation: flipInY;
+    animation-duration: 2s;
+    --animate-delay: 5s;
+}

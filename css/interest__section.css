@@ -1,0 +1,33 @@
+.interest__section {
+    max-width: 1005px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.container {
+}
+.interest__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.section__img {
+    top: 10px;
+}
+.liquid-button {
+}
+.interest__block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.interest__block-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000000;
+    border-top: 16px;
+    margin-bottom: 40px;
+}
+.section__btn {
+}
+.button {
+}

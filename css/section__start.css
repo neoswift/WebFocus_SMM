@@ -19,6 +19,8 @@
     color: #000000;
     max-width: 405px;
     margin-bottom: 14px;
+
+    
 }
 
 .section__start-title span {
@@ -65,6 +67,7 @@
 .section__img {
     position: relative;
     z-index: 1;
+    top: -35px;
 }
 
 .section__img::before {
@@ -72,10 +75,12 @@
     display: block;
     content: "";
     background-image: url(./../img/face/girl_bubble-start.png);
-    width: 234px;
-    height: 293px;
-    right: 112px;
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 228px;
+    top: 0;
+    left: 138px;
     z-index: 5;
-    transform: translateY(25%);
+    transform: translateY(48%);
 }
 

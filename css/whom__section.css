@@ -1,0 +1,33 @@
+.whom__section {
+    margin-top: 200px;
+}
+.container {
+}
+.whom__section-title {
+    max-width: 680px;
+}
+.whom__section-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.whom__section-content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px;
+}
+.whom_img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 14px;
+}
+.whom__img-man {
+    width: 227px;
+    height: 186px;
+    margin-bottom: 28px;
+}
+.text-bold-14 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}

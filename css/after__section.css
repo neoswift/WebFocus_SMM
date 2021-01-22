@@ -1,0 +1,47 @@
+.after__section {
+    margin-top: 200px;
+    
+    
+}
+.container {
+}
+.after__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin-left: auto;
+}
+.after__babble-img {
+    position: relative;
+    width: 400px;
+}
+.after__babble-img::before {
+    position: absolute;
+    display: block;
+    content: "SMM Web Focus";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 1.30;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 250px;
+    height: 100px;
+    top: 121px;
+    left: 104px;
+    z-index: 5;
+    transform: translateY(48%);
+}
+.liquid-button {
+}
+.after__section-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 633px;
+}
+.after__section-title {
+}
+.after-content {
+    display: flex;
+}
+.left__img {
+}
