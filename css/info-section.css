@@ -7,6 +7,21 @@
     display: flex;
     justify-content: space-between;
 }
+@media(max-width: 768px) {
+    .info__smm {
+        flex-direction: column;
+    }
+}
+@media(max-width: 1090px) {
+    .info__smm-block {
+        max-width: 425px;
+    }
+}
+@media(max-width: 768px) {
+    .info__smm-block {
+        max-width: 100%;
+    }
+}
 .info__smm-block {
 }
 .info__smm-content {
@@ -24,6 +39,11 @@
 .info__smm-content--text {
     max-width: 500px;
 }
+@media(max-width: 768px) {
+    .info__smm-content--text {
+        max-width: 100%;
+    }
+}
 .info__smm-subtitle {
     font-style: normal;
     font-weight: 600;
@@ -38,13 +58,39 @@
 .info__smm__duties {
     margin-top: 200px;
 }
+@media(max-width: 1090px) {
+    .info__smm__duties {
+        margin-top: 180px;
+    }
+}
+@media(max-width: 768px) {
+    .info__smm__duties {
+        margin-top: 160px;
+    }
+}
 .smm__duties {
     display: flex;
     justify-content: space-between;
 }
+@media(max-width: 768px) {
+    .smm__duties {
+        flex-direction: column;
+    }
+}
 .duties__block {
     display: flex;
     justify-content: space-between;
+}
+@media(max-width: 768px) {
+    .duties__block {
+       margin-bottom: 26px;
+    }
+}
+@media(max-width: 768px) {
+    .duties__block {
+       margin-bottom: 26px;
+       flex-direction: column;
+    }
 }
 .duties__block-wrapper {
     display: flex;
@@ -63,6 +109,20 @@
     font-size: 16px;
     line-height: 1.30;
     color: #4B4B4B;
+}
+.img_right-last {
+    margin-right: 100px;
+}
+@media (max-width:768px) {
+    .duties__block-content {
+        max-width: 100%;
+    }
+    .duties__block-wrapper {
+        padding-bottom: 25px;
+    }
+    .img_right-last {
+        margin-right: 100px;
+    }
 }
 .duties__block-content:not(:last-child) {
     margin-bottom: 28px;
@@ -94,3 +154,22 @@
 .duties__block-text {
     max-width: 580px;
 }
+@media(max-width: 768px) {
+    .duties__block-text {
+       max-width: 100%;
+    }
+    .duties__block-content {
+        max-width: 100%;
+    }
+    .duties__block-wrapper {
+        padding-bottom: 25px;
+    }
+    .img_right,
+    .img_right-last {
+        margin-right: 100px;
+    }
+}
+@media (max-width:768px) {
+    
+}
+

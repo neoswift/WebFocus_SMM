@@ -43,20 +43,20 @@
                         <a href="" class="list__link list__link-arrow">
                             Курсы
                         </a></li>
-                </ul>
-                <ul class="header-nav__list">
+                <!-- </ul>
+                <ul class="header-nav__list"> -->
                     <li class="list__item">
                         <a href="" class="list__link list__link-arrow">
                             Дистанционное обучение
                         </a></li>
-                </ul>
-                <ul class="header-nav__list">
+                <!-- </ul>
+                <ul class="header-nav__list"> -->
                     <li class="list__item">
                         <a href="" class="list__link list__link-arrow">
                             О нас
                         </a></li>
-                </ul>
-                <ul class="header-nav__list">
+                <!-- </ul>
+                <ul class="header-nav__list"> -->
                     <li class="list__item">
                         <a href="" class="list__link">
                             Контакты
@@ -84,12 +84,12 @@
                             в Минске</h1>
                         <p class="section__start-text">Освоить профессию SMM-специалиста с нуля
                             и начать зарабатывать?</p>
-                        <div class="section__btn">
+                        <div class="section__btn start__section-btn">
                             <a href="#form" class="button">Записаться</a>
                         </div>
                     </div>
-                    <div class="section__img">
-                        <svg class="liquid-button"
+                    <div class="section__img ">
+                        <svg class="liquid-button start__liquid-button"
                             data-force-factor="0.1"
                             data-layer-1-viscosity="0.5"
                             data-layer-2-viscosity="0.4"
@@ -112,6 +112,9 @@
                     </div>
                     <div class="block__plus-text">
                         <p>Будь в тренде – пройди обучение по СММ продвижени в Минске и начни получать стабильный доход!</p>
+                    </div>
+                    <div class="section__btn block__plus-btn">
+                        <a href="#form" class="button">Записаться</a>
                     </div>
                 </div>
                 <div class="block__intro">
@@ -139,9 +142,12 @@
                                 <p>Наши эксперты разработали программы курсов СММ в Минске по принципу меньше теории и больше практики, составили пошаговые инструкции, подготовили подборки приложений и бизнес-кейсы по продвижению бизнеса и личного бренда через социальные сети.</p>
                                 <p>В СММ школе предусмотрены пакеты для новичков и для специалистов media-marketing. Обучение проходит в очной форме и дистанционно.</p>
                             </div>                            
-                            <div class="section__btn">
-                                <a href="" class="button">Записаться</a>
+                            <div class="section__btn intro_btn">
+                                <a href="#form" class="button">Записаться</a>
                             </div>
+                        </div>
+                        <div class="section__btn intro_btn-hiden">
+                            <a href="#form" class="button">Записаться</a>
                         </div>
                     </div>
                 </div>
@@ -207,17 +213,17 @@
                                 </div>
 
                                 <div class="duties__block-content">
-                                    <h3 class="duties-subtitle">Подбор фото и<br> видеоконтента</h3>
+                                    <h3 class="duties-subtitle">Подбор фото и видеоконтента</h3>
                                    <img src="./img/duties/image_2.jpg" alt="img" class="img_right">
                                 </div>
 
                                 <div class="duties__block-content">
-                                    <h3 class="duties-subtitle">Разработка<br> стратегии</h3>
+                                    <h3 class="duties-subtitle">Разработка стратегии</h3>
                                     <img src="./img/duties/image_3.jpg" alt="img" class="img_right">
                                 </div>
 
                                 <div class="duties__block-content">
-                                    <h3 class="duties-subtitle">Продажи</h3>
+                                    <h3 class="duties-subtitle duties-subtitle--sale">Продажи</h3>
                                     <img src="./img/duties/image_4.jpg" alt="img" class="img_right">
                                 </div>
                             </div>
@@ -257,7 +263,40 @@
         </section>
 
         <section id="form" class="section-form">
-
+            <div class="container">
+                <div class="form__block">
+                    <div class="form__title">
+                        <h2 class="form__section-title">Записаться на курс или получить бесплатную консультацию</h2>
+                    </div>                
+                    <div class="form__wrapper">
+                        <form action="http://ab-w.net/comments.php" method="post" name="commentform" id="commentform">
+                            <div class="form__name-block">
+                                <p><input class="form_name" type="text" name="author" id="author" value="" placeholder="Имя" />
+                                    <small></small>
+                                    </p>
+                            </div>
+                            <div class="form__phone-block">
+                                <p><input class="form_phone" type="text" name="phone" id="phone" value="" placeholder="Телефон" />
+                                    <small></small>
+                                    </p>
+                            </div>
+                            <div class="form__mail-block">
+                                <p><input class="form_mail" type="text" name="email" id="email" value="" placeholder="e-mail" />
+                                    <small></small>
+                                    </p>
+                            </div>
+                            
+                            
+                            <div class="section__btn section__form_btn">
+                                <a href="" class="button form__btn ">Записаться</a>
+                            </div>
+                            <!-- <p class="psevdo__btn"><input class="form__btn" name="submit" type="submit" id="submit" value="Записаться" />
+                            </p> -->
+                        </form>
+                            <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
+                    </div>
+                </div>
+            </div>     
         </section>
 
         <section class="skills__section">
@@ -318,7 +357,7 @@
             <div class="container">
                 <div class="after__wrapper">
                    <div class="after__babble-img">
-                        <svg class="liquid-button"
+                        <svg class="liquid-button after__liquid-button"
                         data-force-factor="0.1"
                         data-layer-1-viscosity="0.5"
                         data-layer-2-viscosity="0.4"
@@ -375,7 +414,7 @@
                       </dt>
                       <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
                         <p>Грамотный СММ-маркетолог развивает профиль бренда или компании сразу в нескольких социальных сетях. При привлечении подписчиков, основная задача сформировать целевую аудиторию – определить пользователей, которым будет интересно изучить информацию в Вашем профиле и стать клиентом. При создании портрета целевой аудитории маркетолог ориентируется на: пол, возраст, семейное положение, профессию, уровень дохода, интересы, гео-позицию.</p>
-                        <p>Совет агентства «Веб Фокус»: на начальном этапе, пока Вы еще не начали продажи и у Вас нет клиентов, составить потрет целевой аудитории можно, проанализировав активных подписчиков.</p>
+                        <p><span class="yelow">Совет агентства «Веб Фокус»:</span> на начальном этапе, пока Вы еще не начали продажи и у Вас нет клиентов, составить потрет целевой аудитории можно, проанализировав активных подписчиков.</p>
                       </dd>
                       <dt>
                         <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
@@ -461,7 +500,7 @@
     <section class="interest__section">
         <div class="container">
             <div class="interest__wrapper">
-                <div class="section__img">
+                <div class="interest__section__img">
                     <svg class="liquid-button"
                         data-force-factor="0.1"
                         data-layer-1-viscosity="0.5"
@@ -494,7 +533,7 @@
                     <p>г. Минск, проспект Независмости 77</p>
                     <a href="tel:+375291644000" class="footer-phone">+375 (29) 16 44 000</a>
                     <a href="mail:courses@webfocus.by" class="footer__mail">courses@webfocus.by</a>
-                    <p>© 2020 Курсы SMM в Минске</p>
+                    <p class="footer__copirate">© 2020 Курсы SMM в Минске</p>
                     </div>
                     
                 <div class="footer__block-link">
@@ -518,6 +557,7 @@
                     </div>
                     <a href="#" class="footer__link-map">Карта Сайта</a>
                     <a href="#" class="footer__link-privacy">Политика конфиденциальности</a>
+                    <p class="footer__copirate-hiden">© 2020 Курсы SMM в Минске</p>
                 </div>
             </div>
         </div>

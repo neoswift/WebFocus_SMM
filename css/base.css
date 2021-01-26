@@ -12,6 +12,12 @@ h2 {
     color: #000000;
     margin-bottom: 30px;
 }
+@media (max-width: 1090px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
 h3 {
     font-style: normal;
 font-weight: 600;
@@ -29,9 +35,10 @@ li {
     list-style-type: none;
 }
 img {
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -46,7 +53,40 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-
+@media (max-width: 1090px) {
+    .container {
+        margin: 0 auto;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        margin: auto 40px;
+        padding: 0;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        margin: auto 15px;
+        padding: 0;
+    }
+}
+@media (max-width: 1090px) {
+    section:not(:first-child) {
+      margin-top: 180px;
+  }
+}
+@media (max-width: 768px) {
+    section:not(:first-child) {
+      margin-top: 160px;
+  }
+}
+@media (max-width: 540px) {
+    section:not(:first-child) {
+      margin-top: 140px;
+  }
+}
 .liquid-button {
     margin: auto;
     font-weight: bold;

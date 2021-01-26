@@ -9,15 +9,78 @@
     display: flex;
     justify-content: space-between;
 }
-.section__img {
+@media (max-width: 540px) {
+    .interest__wrapper {
+        flex-direction: column;
+    }
+    
+}
+.interest__section__img {
+    position: relative;
+    width: 400px;
     top: 10px;
 }
-.liquid-button {
+.interest__section__img::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url(./../img/face/end.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 185px;
+    height: 228px;
+    top: -35px;
+    left: 115px;
+    z-index: 5;
+    transform: translateY(48%);
 }
+
+@media (max-width: 1090px) {
+    .liquid-button  {
+        width: 350px;
+  }
+}
+@media (max-width: 768px) {
+    .liquid-button  {
+        width: 265px;
+  }
+  .interest__section__img::before {
+    width: 135px;
+    height: 180px;
+    left: 57px;
+    z-index: 5;
+    transform: translateY(20%);
+}
+}
+@media (max-width: 540px) {
+    .liquid-button  {
+        width: 340px;
+  }
+  .interest__section__img {
+      margin: auto;
+      width: auto;
+      padding-bottom: 24px;
+  }
+  .interest__section__img::before {
+    width: 185px;
+    height: 228px;
+    left: 79px;
+    z-index: 5;
+    transform: translateY(20%);
+}
+    
+}
+
 .interest__block-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 565px;
+}
+@media (max-width: 768px) {
+    .interest__block-content {
+        max-width: 400px;
+    }
 }
 .interest__block-text {
     font-weight: bold;
@@ -27,7 +90,16 @@
     border-top: 16px;
     margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+    .interest__block-text {
+        font-size: 20px;
+    }
+}
 .section__btn {
 }
-.button {
+@media (max-width: 540px) {
+    .section__btn {
+        margin: auto;
+        margin-top: 50px;
+    }
 }

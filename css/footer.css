@@ -3,6 +3,16 @@
     background-color: #4B4B4B;
     padding: 62px 0 44px 0;
 }
+@media (max-width:768px) {
+    .footer {
+        margin-top: 160px;
+    }
+}
+@media (max-width:540px) {
+    .footer {
+        margin-top: 140px;
+    }
+}
 .container {
 }
 .footer__block {
@@ -58,4 +68,22 @@
 }
 .footer__socials-icon:hover {
     fill: #FEBD29;
+}
+
+@media (max-width:540px) {
+    .footer__block {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__block-link {
+        align-items: start;
+    }
+    .footer__copirate {
+        display: none;
+    }
+    .footer__copirate-hiden {
+        display: block;
+        color: #fff;
+        padding-top: 94px;
+    }
 }

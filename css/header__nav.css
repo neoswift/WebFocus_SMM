@@ -15,7 +15,10 @@
 }
 .logo__img {
 }
-.nav__list {
+.header-nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
 
 }
 .list__link {
@@ -54,8 +57,18 @@
     left: 0;
     background: #FEBD29;
 }
-.header-nav__search {
+@media (max-width: 1090px) {
+  .header-nav__search {
+    padding: 0 59px;
+  }
 }
+@media (max-width: 768px) {
+  .header-nav__list,
+  .header-nav__search {
+    display: none;
+  }
+}
+
 .header-nav__search-img {
 }
 .header-nav__phone {    
@@ -108,11 +121,11 @@
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: -7px;
-    left: -50px;
+    left: -15px;
     right: 0;
     bottom: 0;
     padding: 12px 0;
-    margin: 0 0 0 30px;
+    /* margin: 0 0 0 30px; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
