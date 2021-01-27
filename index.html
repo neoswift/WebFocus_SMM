@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
     <link rel="stylesheet" href="./css/aos.css">
 
     <title>Document</title>
@@ -269,32 +271,17 @@
                         <h2 class="form__section-title">Записаться на курс или получить бесплатную консультацию</h2>
                     </div>                
                     <div class="form__wrapper">
-                        <form action="http://ab-w.net/comments.php" method="post" name="commentform" id="commentform">
-                            <div class="form__name-block">
-                                <p><input class="form_name" type="text" name="author" id="author" value="" placeholder="Имя" />
-                                    <small></small>
-                                    </p>
-                            </div>
-                            <div class="form__phone-block">
-                                <p><input class="form_phone" type="text" name="phone" id="phone" value="" placeholder="Телефон" />
-                                    <small></small>
-                                    </p>
-                            </div>
-                            <div class="form__mail-block">
-                                <p><input class="form_mail" type="text" name="email" id="email" value="" placeholder="e-mail" />
-                                    <small></small>
-                                    </p>
-                            </div>
-                            
-                            
-                            <div class="section__btn section__form_btn">
-                                <a href="" class="button form__btn ">Записаться</a>
-                            </div>
-                            <!-- <p class="psevdo__btn"><input class="form__btn" name="submit" type="submit" id="submit" value="Записаться" />
-                            </p> -->
+                        <form action="mailer/smart.php" method="POST" class="form">
+                            <input type="text" autocomplete="off" name="user_name" class="form_name" placeholder="Ваше имя" required>
+                            <input type="tel" name="user_phone" class="form-input input-phone form_phone" placeholder="Телефон" pattern="[0-9]{5,10}" required>
+                            <input type="mail" name="user_mail" class="form-input input-phone form_mail" placeholder="e-mail" pattern="[a-zA-Z_]+@[a-zA-Z_]+?.[a-zA-Z]{2,3}" required>
+									
+									<button class="form__btn form-button" type="submit">Записаться</button>
+									<div class="form-small">
                         </form>
-                            <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
+                            
                     </div>
+                    <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
                 </div>
             </div>     
         </section>
@@ -311,18 +298,50 @@
                         </ul>
                     </div>
                     <div class="skills__block-img">
-                        <img src="./img/skills_img/img1.jpg" alt="img" class="skills__content-img" data-aos="flip-left"                        
-                        data-aos-delay="400">
-                        <img src="./img/skills_img/img2.jpg" alt="img" class="skills__content-img" data-aos="flip-left" data-aos="flip-left"                        
-                        data-aos-delay="500">
-                        <img src="./img/skills_img/img3.jpg" alt="img" class="skills__content-img" data-aos="flip-left" data-aos="flip-left"                        
-                        data-aos-delay="600">
-                        <img src="./img/skills_img/img4.jpg" alt="img" class="skills__content-img" data-aos="flip-left" data-aos="flip-left"                        
-                        data-aos-delay="400">
-                        <img src="./img/skills_img/img5.jpg" alt="img" class="skills__content-img" data-aos="flip-left" data-aos="flip-left"                        
-                        data-aos-delay="500">
-                        <img src="./img/skills_img/img6.jpg" alt="img" class="skills__content-img" data-aos="flip-left" data-aos="flip-left"                        
-                        data-aos-delay="600">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back-1">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back-2">
+                              </div>
+                            </div>
+                        </div><div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back-3">
+                              </div>
+                            </div>
+                        </div><div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back-4">
+                              </div>
+                            </div>
+                        </div><div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back-5">
+                              </div>
+                            </div>
+                        </div><div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back-6">
+                              </div>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
 
@@ -564,7 +583,8 @@
     </footer>
 
     </main>
-    <script src="./js/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

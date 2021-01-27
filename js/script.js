@@ -1,6 +1,81 @@
+// ------ flip-card
+
+const cards = document.querySelectorAll('.flip-card');
+let timerId = setTimeout(() => {
+	cards.forEach(card => {
+	    card.classList.add('flip-card_flipped');
+	   card.removeEventListener('mouseover', flipped);
+	  });
+}, 5000);
+
+function flipped() {
+  clearTimeout(timerId);
+  
+  cards.forEach(card => {
+	    card.classList.add('flip-card_flipped');
+	   card.removeEventListener('mouseover', flipped);
+	  });
+}
+
+cards.forEach(card => card.addEventListener('mouseover', flipped));
+
+// const flipCard = document.querySelectorAll('.flip-card');
+
+// let isHovered = false;
+
+// function toggleHovered() {
+//    if (isHovered = true) {
+//      flipCard.classList.add('rotated');
+//    }
+// }
+
+// flipCard.classList.add('mouseover', toggleHovered);
+
+
+
+
+// setTimeout(() => {
+//   flipCard.removeEventListener('mouseover', toggleHovered);
+  
+//    if (!isHovered) {
+//      flipCard.classList.add('rotated');
+//    }
+// }, 5000);
+
+// ------ slick
+
+$(".articles__wrapper").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  mobileFirst: true,
+  dots: false,
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: "unslick"
+    },    
+    {
+      breakpoint: 568,
+      settings: {        
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+  ]
+});
+
 // ----- AOS
+
 AOS.init();
+
 // ----- babble
+
 const LiquidButton = class LiquidButton {
   constructor(svg) {
     const options = svg.dataset;

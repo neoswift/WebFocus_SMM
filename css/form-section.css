@@ -37,6 +37,7 @@
 form {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 @media (max-width: 1090px) {
     form {
@@ -87,6 +88,7 @@ form {
 }
 input {
     background-color: #FEBD29;
+    font-size: 16px;
 }
 .form_name:focus,
 .form_phone:focus,
@@ -96,13 +98,15 @@ input {
 
 .form__btn {
     position: relative;
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
     background-color: #fff;
     color: #000;
     margin-left: 7px;
-    padding: 15px 41px 15px 38px;
+    width: 175px;
+    padding: 15px 0;
     border: none;
     cursor: pointer;
     outline: none;
@@ -112,10 +116,11 @@ input {
         padding: 40px 0 25px 0;
     }
 }
+
 .psevdo__btn {
     position: relative;
 }
-.psevdo__btn::before {
+.form__btn::before {
     position: absolute;
     content: "";
     width: 173px;
@@ -126,6 +131,6 @@ input {
     transition: transform 0.2s ease-in ;
     z-index: 5;
 }
-.psevdo__btn:hover:before {
+.form__btn:hover:before {
     transform: translate(5px, 10%);
 }
