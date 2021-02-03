@@ -99,6 +99,11 @@
     z-index: 1;
     top: -45px;
 }
+@media (max-width: 768px) {
+    .section__img {
+        top: -30px;
+    }
+}
 .section__img::before {
     position: absolute;
     display: block;
@@ -153,6 +158,10 @@
     }
 }
 
+
+
+
+
 /* start_smm */
 
 .start__smm-title {
@@ -168,3 +177,8 @@
     line-height: 1.5;
     max-width: 560px;
 }
+
+
+
+
+

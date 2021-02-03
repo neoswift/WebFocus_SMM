@@ -62,11 +62,11 @@
 .footer__link-privacy {
     color: #fff;
 }
-.footer__socials-icon {
+.link__socials-icon {
     transition: fill 0.2s ease-in;
     fill: #727272;
 }
-.footer__socials-icon:hover {
+.link__socials-icon:hover {
     fill: #FEBD29;
 }
 

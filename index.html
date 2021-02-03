@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="./css/aos.css">
 
     <title>Document</title>
 </head>
@@ -34,6 +33,7 @@
     </svg>
 
 
+
     <header class="header-nav">
         <div class="container">
             <div class="header-nav__row">
@@ -44,13 +44,38 @@
                     <li class="list__item">
                         <a href="" class="list__link list__link-arrow">
                             Курсы
-                        </a></li>
+                        </a>
+                        <ul class="white__list">
+                            <h2 class="header__menu-title">Курсы</h2>
+
+                            <li id="oh"><a href="#" class="menu__link" id="white__list">SMM для начинающих</a>
+                                <ul class="submenu" id="submenu">
+                                    <li><a href="#" class="menu__link-two">Продвижение в Инстаграме</a></li>
+                                    <li><a href="#" class="menu__link-two">Продвижение ВКонтакте</a></li>
+                                    <li><a href="#" class="menu__link-two">Продвижение в Facebook</a></li>
+                                    <li><a href="#" class="menu__link-two">Продвижение в Одноклассниках</a></li>
+                                    <li><a href="#" class="menu__link-two">Продвижение на YouTube</a></li>
+                                    <li><a href="#" class="menu__link-two">Продвижение в Telegram</a></li>
+                                    <li><a href="#" class="menu__link-two">Продвижение в Twitter</a></li>
+                                    <li><a href="#" class="menu__link-two">Продвижение хайповых соцсетей (Инстаграм и Youtube)</a></li>
+                                    <li><a href="#" class="menu__link-two">Американская четверка (Instagram, Facebook, YouTube, Twitter)</a></li>
+                                    <li><a href="#" class="menu__link-two">Русская тройка (ВКонтакте, Одноклассники, Telegram)</a></li>
+                                    <li><a href="#" class="menu__link-two">Популярные социальные сети (Instagram, ВКонтакте, Facebook)</a></li>
+                                    <li><a href="#" class="menu__link-two">Комплексный интернет-маркетинг в социальных сетях</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu__link">Курсы для smm-менеджеров</a></li>
+                            <li><a href="#" class="menu__link">Курсы по таргетированной рекламе</a>       
+                            </li>
+                        </ul>
+                    </li>
                 <!-- </ul>
                 <ul class="header-nav__list"> -->
                     <li class="list__item">
                         <a href="" class="list__link list__link-arrow">
                             Дистанционное обучение
-                        </a></li>
+                        </a>                        
+                    </li>                        
                 <!-- </ul>
                 <ul class="header-nav__list"> -->
                     <li class="list__item">
@@ -63,6 +88,24 @@
                         <a href="" class="list__link">
                             Контакты
                         </a></li>
+
+                        <div class="social__link-hiden">
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
                 </ul>
                 <a href="" class="header-nav__search">
                     <img src="./img/header-nav/search.svg" alt="search" class="header-nav__search-img">
@@ -73,7 +116,15 @@
                         </span>
                     <a href="tel:+375 (29) 16 44 000" class="header-nav__phone-number">+375 (29) 16 44 000</a>
                 </button>
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                  </div>
+                <div >
             </div>
+        </div>
+        
+        
+            
         </div>
     </header>
 
@@ -106,13 +157,13 @@
                     </div>
                 </div>
                 <div class="block__plus">
-                    <div class="block__plus-text">
+                    <div class="block__plus-text stars_psevdo">
                         <p>Курсы SMM агентства «Веб Фокус» – самая полная образовательная программа по продвижению в социальных сетях</p>
                     </div>
-                    <div class="block__plus-text">
+                    <div class="block__plus-text stars_psevdo">
                         <p>СММ-специалист – современная и востребованная профессия, при этом экспертов в этой отрасли недостаточно.</p>
                     </div>
-                    <div class="block__plus-text">
+                    <div class="block__plus-text stars_psevdo">
                         <p>Будь в тренде – пройди обучение по СММ продвижени в Минске и начни получать стабильный доход!</p>
                     </div>
                     <div class="section__btn block__plus-btn">
@@ -209,39 +260,39 @@
                     <div class="smm__duties">
                         <div class="duties__block">
                             <div class="duties__block-wrapper">
-                                <div class="duties__block-content">
+                                <div class="duties__block-content yellow_circle">
                                     <h3 class="duties-subtitle">Создание постов</h3>
                                     <img src="./img/duties/image_1.jpg" alt="img" class="img_right">
                                 </div>
 
-                                <div class="duties__block-content">
+                                <div class="duties__block-content yellow_circle">
                                     <h3 class="duties-subtitle">Подбор фото и видеоконтента</h3>
                                    <img src="./img/duties/image_2.jpg" alt="img" class="img_right">
                                 </div>
 
-                                <div class="duties__block-content">
+                                <div class="duties__block-content yellow_circle">
                                     <h3 class="duties-subtitle">Разработка стратегии</h3>
                                     <img src="./img/duties/image_3.jpg" alt="img" class="img_right">
                                 </div>
 
-                                <div class="duties__block-content">
+                                <div class="duties__block-content yellow_circle">
                                     <h3 class="duties-subtitle duties-subtitle--sale">Продажи</h3>
                                     <img src="./img/duties/image_4.jpg" alt="img" class="img_right">
                                 </div>
                             </div>
 
                             <div class="duties__block-wrapper">
-                                <div class="duties__block-content">
+                                <div class="duties__block-content yellow_circle">
                                     <h3 class="duties-subtitle">Дизайн</h3>
                                     <img src="./img/duties/image_5.jpg" alt="img" class="img_right">
                                 </div>
 
-                                <div class="duties__block-content">
+                                <div class="duties__block-content yellow_circle">
                                     <h3 class="duties-subtitle">Реклама</h3>
                                     <img src="./img/duties/image_6.jpg" alt="img" class="img_right">
                                 </div>
                                 
-                                <div class="duties__block-content">
+                                <div class="duties__block-content yellow_circle">
                                     <h3 class="duties-subtitle">Клиентский сервис</h3>
                                     <img src="./img/duties/image_7.jpg" alt="img" class="img_right-last">
                                 </div>
@@ -266,23 +317,31 @@
 
         <section id="form" class="section-form">
             <div class="container">
+                <div class="form__block-hiden">
+                    <h2 class="form__block-text">Ваша заявка принята!</h2>
+                    <p>Менеджер свяжется с Вами в ближайшее время.</p>
+                    <div class="form__block-img"></div>
+                </div>
+
                 <div class="form__block">
                     <div class="form__title">
                         <h2 class="form__section-title">Записаться на курс или получить бесплатную консультацию</h2>
                     </div>                
                     <div class="form__wrapper">
                         <form action="mailer/smart.php" method="POST" class="form">
-                            <input type="text" autocomplete="off" name="user_name" class="form_name" placeholder="Ваше имя" required>
-                            <input type="tel" name="user_phone" class="form-input input-phone form_phone" placeholder="Телефон" pattern="[0-9]{5,10}" required>
-                            <input type="mail" name="user_mail" class="form-input input-phone form_mail" placeholder="e-mail" pattern="[a-zA-Z_]+@[a-zA-Z_]+?.[a-zA-Z]{2,3}" required>
+                            <input type="text" id="text" autocomplete="off" name="user_name" class="form_name" placeholder="Ваше имя" required>
+                            <input type="tel" id="tel" name="user_phone" class="form-input input-phone form_phone" placeholder="Телефон"  required>
+                            <input type="mail" id="mail" name="user_mail" class="form-input input-phone form_mail" placeholder="e-mail" pattern="[a-zA-Z_]+@[a-zA-Z_]+?.[a-zA-Z]{2,3}" required>
 									
-									<button class="form__btn form-button" type="submit">Записаться</button>
+									<button class="form__btn form-button" type="submit" id="submit">Записаться</button>
 									<div class="form-small">
                         </form>
                             
                     </div>
                     <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
                 </div>
+
+                
             </div>     
         </section>
 
@@ -292,9 +351,9 @@
                     <div class="skills__content">
                         <h2 class="skills__content-title wow flipInX">Какие навыки Вы освоите на курсах СММ-специалиста агентства «Веб Фокус»:</h2>
                         <ul class="skills__content-text">
-                            <li>Рекламные кампании станут эффективными</li>
-                            <li>Актуальные тренды и фишки помогут выводить публикации в ТОП</li>
-                            <li>Работа в рекламном кабинете станет понятной, а подборка специальных приложений позволит автоматизировать процессы</li>
+                            <li class="yellow-line">Рекламные кампании станут эффективными</li>
+                            <li class="yellow-line">Актуальные тренды и фишки помогут выводить публикации в ТОП</li>
+                            <li class="yellow-line">Работа в рекламном кабинете станет понятной, а подборка специальных приложений позволит автоматизировать процессы</li>
                         </ul>
                     </div>
                     <div class="skills__block-img">
@@ -559,17 +618,17 @@
                     <a href="#form" class="footer__link-signUp">Записаться</a>
                     <div class="footer__link-social">
                         <a href="" class="link__social">
-                            <svg class="footer__socials-icon" width="30" height="30">
+                            <svg class="link__socials-icon" width="30" height="30">
                                 <use href="#facebook"></use>
                             </svg>
                         </a>
                         <a href="" class="link__social">
-                            <svg class="footer__socials-icon" width="30" height="30">
+                            <svg class="link__socials-icon" width="30" height="30">
                                 <use href="#vk"></use>
                             </svg>
                         </a>
                         <a href="" class="link__social">
-                            <svg class="footer__socials-icon" width="30" height="30">
+                            <svg class="link__socials-icon" width="30" height="30">
                                 <use href="#instagram"></use>
                             </svg>
                         </a>

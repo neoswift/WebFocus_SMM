@@ -1,3 +1,30 @@
+// ------- menu-icon
+
+document.querySelector('.menu-icon-wrapper').onclick = function(){
+  document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+  document.querySelector('.header-nav__list').classList.toggle('header-nav__list--active');
+}
+// ------ menu 
+
+$('ul.header-nav__list li.list__item').hover(function() {
+  $(this).find('.white__list').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.white__list').stop(true, true).delay(200).fadeOut(500);
+});
+
+
+$("#oh").hover(function(){
+  $('.submenu').addClass('hidden');
+},function(){
+  $('.submenu').removeClass('hidden');  
+});
+
+$(".menu-icon-wrapper").click(function(){
+  $('.header-nav__list').addClass('hidden');
+},function(){
+  $('.header-nav__list').removeClass('hidden');  
+});
+
 // ------ flip-card
 
 const cards = document.querySelectorAll('.flip-card');
@@ -19,37 +46,12 @@ function flipped() {
 
 cards.forEach(card => card.addEventListener('mouseover', flipped));
 
-// const flipCard = document.querySelectorAll('.flip-card');
-
-// let isHovered = false;
-
-// function toggleHovered() {
-//    if (isHovered = true) {
-//      flipCard.classList.add('rotated');
-//    }
-// }
-
-// flipCard.classList.add('mouseover', toggleHovered);
-
-
-
-
-// setTimeout(() => {
-//   flipCard.removeEventListener('mouseover', toggleHovered);
-  
-//    if (!isHovered) {
-//      flipCard.classList.add('rotated');
-//    }
-// }, 5000);
-
-// ------ slick
-
 $(".articles__wrapper").slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   variableWidth: true,
   mobileFirst: true,
   dots: false,
@@ -57,7 +59,10 @@ $(".articles__wrapper").slick({
   responsive: [
     {
       breakpoint: 769,
-      settings: "unslick"
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
     },    
     {
       breakpoint: 568,
@@ -69,10 +74,6 @@ $(".articles__wrapper").slick({
     
   ]
 });
-
-// ----- AOS
-
-AOS.init();
 
 // ----- babble
 
@@ -438,5 +439,42 @@ for (let buttonIndex = 0; buttonIndex < buttons.length; buttonIndex++) {
     }
   })();
 
+
+// Отправка заявки 
+$(document).ready(function() {
+	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+		if (document.form.name.value == '' || document.form.phone.value == '' ) {
+			valid = false;
+			return valid;
+		}
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$('.js-overlay-thank-you').fadeIn();
+			$(this).find('input').val('');
+			$('#form').trigger('reset');
+		});
+		return false;
+	});
+});
+
+
+// --------- Form-hiden
+
+document.querySelector('.form__btn').onclick = function(){
+  document.querySelector('.form__block').classList.toggle('block-hiden');
+  document.querySelector('.form__block-hiden').classList.toggle('form__block-hiden--active'); 
+}
+
+// let formBlock = document.querySelector('.form__block');
+// let formBlockHiden = document.querySelector('.form__block-hiden');
+// let btn = document.querySelector('.flip-card');
+
+// btn.onclick = function(){
+//   formBlockHiden.style.display = "flex";
+//   formBlock.style.display = "none";
+// }
 
 

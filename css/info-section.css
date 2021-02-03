@@ -130,7 +130,7 @@
 .duties-subtitle {
     margin-left: 20px;
 }
-.duties__block-content::before {
+.yellow_circle::before {
     position: absolute;
     content: "";
     display: block;

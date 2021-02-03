@@ -53,7 +53,7 @@
     position: relative;
     margin-bottom: 14px;
 }
-li:before {
+.yellow-line:before {
     position: absolute;
     content: "";
     left: -35px;
@@ -69,10 +69,6 @@ li:before {
     width: 120px;
     height: 120px;
     perspective: 1000px; 
-  }
-  img{
-      width: 120px;
-      height: 120px;
   }
   
   .flip-card-inner {

@@ -21,7 +21,7 @@
     }    
 }
 
-.block__plus-text::before {
+.stars_psevdo::before {
     content: "";
     display: block;
     width: 100px;
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 768px) {
-    .block__plus-text::before {
+    .stars_psevdo::before {
         width: 40px;
     }    
 }
