@@ -18,12 +18,19 @@ $("#oh").hover(function(){
 },function(){
   $('.submenu').removeClass('hidden');  
 });
+$("#ah").hover(function(){
+  $('.submenu-2').addClass('hidden');
+},function(){
+  $('.submenu-2').removeClass('hidden');  
+});
+
 
 $(".menu-icon-wrapper").click(function(){
   $('.header-nav__list').addClass('hidden');
 },function(){
   $('.header-nav__list').removeClass('hidden');  
 });
+
 
 // ------ flip-card
 
@@ -46,34 +53,7 @@ function flipped() {
 
 cards.forEach(card => card.addEventListener('mouseover', flipped));
 
-$(".articles__wrapper").slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  variableWidth: true,
-  mobileFirst: true,
-  dots: false,
-  autoplay: true,
-  responsive: [
-    {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
-      }
-    },    
-    {
-      breakpoint: 568,
-      settings: {        
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    
-  ]
-});
+
 
 // ----- babble
 

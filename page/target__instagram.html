@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/smm_start.css">
+</head>
+<body>
+    
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="facebook" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 29.9999C23.2842 29.9999 29.9999 23.2842 29.9999 14.9999C29.9999 6.7157 23.2842 0 15 0C6.71571 0 0 6.7157 0 14.9999C0 23.2842 6.71571 29.9999 15 29.9999Z"/>
+            <path d="M21.2719 6.41406H8.72792C7.45005 6.41406 6.41406 7.45 6.41406 8.72792V21.2719C6.41406 22.5499 7.45 23.5858 8.72792 23.5858H14.9145L14.9252 17.4497H13.3309C13.1237 17.4497 12.9555 17.2822 12.9548 17.075L12.947 15.0969C12.9462 14.8887 13.115 14.7193 13.3232 14.7193H14.9147V12.8081C14.9147 10.5903 16.2693 9.38259 18.2477 9.38259H19.8714C20.0789 9.38259 20.2475 9.55098 20.2475 9.75876V11.4265C20.2475 11.6343 20.0791 11.8027 19.8716 11.8027L18.8751 11.8033C17.7992 11.8033 17.5907 12.3145 17.5907 13.065V14.7196H19.955C20.1805 14.7196 20.3552 14.9163 20.3286 15.1399L20.0941 17.1179C20.0718 17.3073 19.9112 17.4499 19.7206 17.4499H17.6014L17.5907 23.5861H21.2719C22.5497 23.5861 23.5857 22.5501 23.5857 21.2722V8.72792C23.5858 7.45005 22.5498 6.41406 21.2719 6.41406Z" fill="white"/>
+            <path d="M14.914 23.5852L14.9247 17.4492H14.8984V23.5852H14.914Z" fill="white"/>
+        </symbol>
+
+        <symbol id="vk" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4334 21.579H15.6107C15.6107 21.579 15.9663 21.5399 16.1479 21.3442C16.315 21.1645 16.3096 20.8271 16.3096 20.8271C16.3096 20.8271 16.2867 19.2473 17.0198 19.0147C17.7426 18.7855 18.6707 20.5415 19.6544 21.2167C20.3983 21.7276 20.9636 21.6156 20.9636 21.6156L23.5939 21.579C23.5939 21.579 24.9699 21.4942 24.3174 20.4123C24.2639 20.3238 23.9375 19.612 22.3617 18.1494C20.7125 16.6186 20.9333 16.8662 22.92 14.2183C24.13 12.6056 24.6137 11.6211 24.4626 11.1994C24.3185 10.7978 23.4286 10.904 23.4286 10.904L20.467 10.9224C20.467 10.9224 20.2475 10.8925 20.0846 10.9898C19.9256 11.0853 19.8231 11.3077 19.8231 11.3077C19.8231 11.3077 19.3544 12.5556 18.7293 13.6169C17.4105 15.8563 16.8832 15.9745 16.6677 15.8354C16.1663 15.5114 16.2915 14.5335 16.2915 13.8388C16.2915 11.6687 16.6206 10.7639 15.6505 10.5296C15.3286 10.4518 15.0917 10.4005 14.2684 10.3922C13.2117 10.3812 12.3173 10.3954 11.8108 10.6435C11.4739 10.8085 11.214 11.1762 11.3723 11.1973C11.568 11.2235 12.0114 11.3168 12.2464 11.6369C12.5499 12.0497 12.5392 12.9771 12.5392 12.9771C12.5392 12.9771 12.7135 15.5317 12.132 15.8491C11.7327 16.0667 11.1851 15.6223 10.0094 13.5907C9.407 12.55 8.95217 11.3997 8.95217 11.3997C8.95217 11.3997 8.86446 11.1847 8.70804 11.0698C8.51819 10.9305 8.25294 10.8861 8.25294 10.8861L5.43867 10.9045C5.43867 10.9045 5.0162 10.9163 4.86111 11.1C4.72314 11.2634 4.85015 11.6013 4.85015 11.6013C4.85015 11.6013 7.05344 16.7561 9.54818 19.3538C11.8357 21.7354 14.4334 21.579 14.4334 21.579Z" fill="white"/>
+        </symbol>
+        <symbol id="instagram" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path d="M18.4703 6.41406H11.5295C8.70883 6.41406 6.41406 8.70883 6.41406 11.5295V18.4703C6.41406 21.2908 8.70883 23.5858 11.5296 23.5858H18.4703C21.2909 23.5858 23.5858 21.291 23.5858 18.4703V11.5295C23.5858 8.70883 21.291 6.41406 18.4703 6.41406ZM21.8583 18.4703C21.8583 20.3414 20.3414 21.8583 18.4703 21.8583H11.5296C9.65846 21.8583 8.14158 20.3414 8.14158 18.4703V11.5296C8.14158 9.65846 9.65846 8.14152 11.5296 8.14152H18.4703C20.3414 8.14152 21.8583 9.65852 21.8583 11.5296V18.4703Z" fill="white"/>
+            <path d="M15.0001 10.5581C12.5512 10.5581 10.5588 12.5505 10.5588 14.9994C10.5588 17.4481 12.5512 19.4405 15.0001 19.4405C17.4489 19.4405 19.4412 17.4483 19.4412 14.9994C19.4412 12.5505 17.4489 10.5581 15.0001 10.5581ZM15.0001 17.713C13.5013 17.713 12.2862 16.4982 12.2862 14.9994C12.2862 13.5006 13.5013 12.2856 15.0001 12.2856C16.4988 12.2856 17.7137 13.5005 17.7137 14.9994C17.7137 16.4982 16.4988 17.713 15.0001 17.713Z" fill="white"/>
+        </symbol>
+            
+    </svg>
+
+
+    <header class="header-nav">
+        <div class="container">
+            <div class="header-nav__row">
+                <a href="./../index.html" class="logo">
+                    <img src="./../img/header-nav/logo.svg" alt="logo" class="logo__img">
+                </a>
+                <ul class="header-nav__list">
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            Курсы
+                        </a>
+                        <ul class="white__list">
+                            <h2 class="header__menu-title">Курсы</h2>
+
+                            <li id="oh"><a href="./smm_start.html" class="menu__link" id="white__list">SMM для начинающих</a>
+                                <ul class="submenu" id="submenu">
+                                    <li><a href="./instagram.html" class="menu__link-two">Продвижение в Инстаграме</a></li>
+                                    <li><a href="./vk.html" class="menu__link-two">Продвижение ВКонтакте</a></li>
+                                    <li><a href="./facebook.html" class="menu__link-two">Продвижение в Facebook</a></li>
+                                    <li><a href="./ok.html" class="menu__link-two">Продвижение в Одноклассниках</a></li>
+                                    <li><a href="./youtube.html" class="menu__link-two">Продвижение на YouTube</a></li>
+                                    <li><a href="./telegram.html" class="menu__link-two">Продвижение в Telegram</a></li>
+                                    <li><a href="./twitter.html" class="menu__link-two">Продвижение в Twitter</a></li>
+                                </ul>
+                            </li>
+                            <li><a  href="./smm_manager.html" class="menu__link">Курсы для smm-менеджеров</a></li>
+                            <li id ="ah"><a href="./target__curses.html" class="menu__link">Курсы по таргетированной рекламе</a>
+                                <ul class="submenu-2" id="submenu-2">
+                                    <li><a href="./target__instagram.html" class="menu__link-two">Таргетированная реклама в Instagram</a></li>
+                                    <li><a href="./target__vk.html" class="menu__link-two">Таргетированная реклама ВКонтакте</a></li>
+                                    <li><a href="./target__facebook.html" class="menu__link-two">Таргетированная реклама в Facebook</a></li>
+                                </ul>       
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="list__item">
+                        <a href="#" class="list__link list__link-arrow">
+                            Дистанционное обучение
+                        </a>
+                        <ul class="white__list munu__link-list">
+
+                                    <li class="menu__link-dist"><a href="./online__curses-instagram.html" class="menu__link-two">Онлайн-курсы Instagram</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-vk.html" class="menu__link-two">Онлайн-курсы  ВКонтакте</a></li>                                    
+                                    <li class="menu__link-dist"><a href="./online__curses-youtube.html" class="menu__link-two">Онлайн-курсы  YouTube</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-smm.html" class="menu__link-two">Онлайн-курс SMM</a></li>
+                                    <li class="menu__link-dist"><a href="./online__vebinar_smm.html" class="menu__link-two">Вебинары по продвижению</a></li>
+
+                        </ul>                        
+                    </li>                        
+                
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            О нас
+                        </a></li>
+                
+                    <li class="list__item">
+                        <a href="" class="list__link">
+                            Контакты
+                        </a></li>
+
+                        <div class="social__link-hiden">
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                </ul>
+                <a href="" class="header-nav__search">
+                    <img src="./../img/header-nav/search.svg" alt="search" class="header-nav__search-img">
+                </a>
+                <button class="header-nav__phone">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                    <a href="tel:+375 (29) 16 44 000" class="header-nav__phone-number">+375 (29) 16 44 000</a>
+                </button>
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                  </div>
+                <div >
+            </div>
+        </div>
+        
+        
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="links">
+            <div class="container">
+                <div class="link_pages">     
+                    <a href="./../index.html" class="curses">Курсы</a>
+                    &nbsp/&nbsp
+                    <a href="./target__curses.html" class="curses">Курсы по таргетированной рекламе</a>
+                    &nbsp/&nbsp
+                    <a href="./target__instagram.html" class="curses">Курс "Таргетированная реклама в Instagram (Инстаграм)"</a>
+                </div>
+            </div>
+        </div>
+        <section class="section__curses_start">
+            <div class="container">
+                <div class="section__wrapper">
+                    <div class="section__start-content">                        
+                        <h1 class="section__start-title target-section__curses-title">
+                            Курс<br> "Таргетированная реклама в <span>Instagram</span> (Инстаграм)"                     
+                        </h1>
+                        <p class="section__start-text section__curses-text">Курс реклама Инстаграм агентства «Веб Фокус» –
+                            это Ваш путь к успеху</p>
+                        <div class="section__btn start__section-btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="section__img curses_target-img">
+                        <svg class="liquid-button start__liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2"
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section class="curses__info">
+            <div class="container">
+                <div class="curses__block_plus">
+                    <div class="block__plus-text  block__plus-one stars_psevdo">
+                        <p>Вы проходили онлайн-вебинары, прочитали массу литературы, изучили опыт известных smm-специалистов, даже обучались на бесплатных курсах. Но по-прежнему не уверены… все ли правильно делаете при размещении рекламы в Инстаграм…</p>
+                    </div>
+                    <div class="section__btn block__plus-btn">
+                        <a href="#form" class="button">Записаться</a>
+                    </div>
+                </div>
+            </div>           
+        </section>
+
+        <section class="after__two">
+            <div class="container">
+                <h2 class="after__two_title target__two_title-650">Краткая программа курса</h2>
+                    <div class="after__two_wrapper">
+                        <div class="after__two-block">
+                            <p>Структурировать навыки, и сложить знания в единую картинку помогут специалисты агентства «Веб Фокус». Наши курсы по таргетированной рекламе состоят из тематических модулей:</p>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/graffic.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p class="medium">Модуль 1 – Стратегия</p>                                        
+                                        <p>На начальном этапе важно разъяснить общие принципы таргета, виды и способы роста подписчиков. Анализ и выделение целевой аудитории.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/image.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p class="medium">Модуль 2 – Технические настройки</p>                                         
+                                        <p>Для размещения объявления нужно научиться пользоваться специальным приложением – Ads Manager. При работе нужно четко понимать цели запуска компании по продвижению в Инстаграм, настраивать таргет, устанавливать пиксели и метки.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/cinema-3.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p class="medium">Модуль 3 – Создание контента</p>                                         
+                                        <p>Креатив и продающие тексты – половина успеха. Но важно учитывать, что для каждой целевой аудитории нужны свои вирусные посты. То, что подходит для одних, может быть неприемлемо для других пользователей.</p>
+                                    </div>                        
+                            </div>
+                            
+                                                        
+                            
+                        </div>
+                        <div class="after__two-block after__two-block--text">
+                            <div class="after-content">
+                                <img src="./../img/icon_left/kubik.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p class="medium">Модуль 4 – Профессиональные фишки</p>                                        
+                                        <p>Чат-боты, лид-формы, фиксированные ставки, приложения для настройки аудитории.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/graffic-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p class="medium">Модуль 5 – Анализ</p>                                         
+                                        <p>Чтобы оценить эффективность, нужно настроить инструменты аналитики – Яндекс.Метрика и Google Analytics.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/cel.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p class="medium">Модуль 6 – Контент-маркетинг</p>                                         
+                                        <p>Разработка стратегии продвижения под конкретные бизнес-цели. Навыки взаимодействия с блогерами, изучение методов увеличения охвата и роста подписчиков.</p>
+                                    </div>                        
+                            </div>
+                        </div>    
+                    </div>
+                   
+            </div>
+        </section>
+
+        <section class="program">
+            <div class="container">
+                <h2 class="program__title-540">Почему выгодно использовать таргет в Инстаграм</h2>
+                <div class="program__wrapper">
+                    <div class="program__block">
+                        <p>В 2020 году Instagram стала популярной площадкой. Ее аудитория – миллиарды пользователей. Одни продают и предлагают услуги, другие ищут и покупают товары. Задачи таргетолога – соединить звенья цепи, помочь одним найти других.</p>
+                        <p>Специалист по таргетированной рекламе в Instagram – своего рода проводник между компанией производителем и покупателями. Но, чтобы не затеряться в миллиардном потоке пользователей, важно четко определить сегмент и целевую аудиторию.</p>
+                        <p>Как это сделать – расскажем на курсах по тагрету в Инстаграм. Наша образовательная программа – возможность получить еще одну квалификацию и навыки новой профессии.</p>
+                        <p>Посетить школу таргетологов рекомендуем, как начинающим специалистам, так и тем, кто уже работает в СММ-сфере. Мы регулярно обновляем программу в зависимости от трендов и алгоритмов, которые вводит социальная сеть. Наши уроки помогут быть в курсе изменений в мире СММ и внедрять знания в свои проекты.</p>
+                    </div>
+                    <div class="program__block yellow-block--center">
+                        <div class="yellow-block">
+                            <p>Посетить школу таргетологов рекомендуем, как начинающим специалистам, так и тем, кто уже работает в СММ-сфере. Мы регулярно обновляем программу в зависимости от трендов и алгоритмов, которые вводит социальная сеть. Наши уроки помогут быть в курсе изменений в мире СММ и внедрять знания в свои проекты.</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+
+        <section id="form" class="section-form">
+            <div class="container">
+                <div class="form__block-hiden">
+                    <h2 class="form__block-text">Ваша заявка принята!</h2>
+                    <p>Менеджер свяжется с Вами в ближайшее время.</p>
+                    <div class="form__block-img"></div>
+                </div>
+
+                <div class="form__block">
+                    <div class="form__title">
+                        <h2 class="form__section-title">Записаться на курс или получить бесплатную консультацию</h2>
+                    </div>                
+                    <div class="form__wrapper">
+                        <form action="mailer/smart.php" method="POST" class="form">
+                            <input type="text" id="text" autocomplete="off" name="user_name" class="form_name" placeholder="Ваше имя" required>
+                            <input type="tel" id="tel" name="user_phone" class="form-input input-phone form_phone" placeholder="Телефон"  required>
+                            <input type="mail" id="mail" name="user_mail" class="form-input input-phone form_mail" placeholder="e-mail" pattern="[a-zA-Z_]+@[a-zA-Z_]+?.[a-zA-Z]{2,3}" required>
+									
+									<button class="form__btn form-button" type="submit" id="submit">Записаться</button>
+									<div class="form-small">
+                        </form>
+                            
+                    </div>
+                    <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
+                </div>
+
+                
+            </div>     
+        </section>
+
+        <section class="two__colums">
+            <div class="container">
+                <h2 class="two__colums-title">Основные задачи таргетолога в Instagram</h2>
+                <div class="two__colums-wrapper">                    
+                    <div class="two__colums-text">                        
+                        <p>Таргетолог – это специалист, который настраивает рекламу в социальных сетях. Его задача составить стратегию продвижения бренда/товара/услуги так, чтобы реклама приносила прибыль, а вложенный бюджет оправдался.</p>
+                        <p>Эффективность работы таргетолога оценивают по объему заявок или продаж. Важно уметь не только сегментировать аудиторию, но и создавать под нее контент. Эти функции могут выполнять другие специалисты – дизайнеры, фотографы, копирайтеры.</p>
+                        <p>Доход у таргетологов в Минске значительно выше среднего. Труд СММ-специалистов оплачивается в зависимости от масштаба организации, на которую работает маркетолог и поставленных задач.</p>
+                    </div>
+                    <div class="two__colums-text">
+                        <p>Чтобы получать достойную зарплату и удачно подобрать работу необходимы знания. Курсы по таргетированной рекламе в Инстаграм агентства «Веб Фокус» помогут достичь поставленных целей!</p>
+                        <p>Обучение Инстаграм – не только теоретическая база для продвижения, но и пошаговые инструкции по планированию, аналитике и управлению эффективностью. Эксперты агентства «Веб Фокус» научат запускать рекламу в Инстаграм, анализировать статистические цифры.</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="after__two">
+            <div class="container">
+                <h2 class="after__two_title target__two_title-650">Какие навыки Вы получите
+                    на курсах по таргету агентства «Веб Фокус»</h2>
+                    <div class="after__two_wrapper">
+                        <div class="after__two-block">
+                            <div class="after-content">
+                                <img src="./../img/icon_left/document-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Научитесь подготавливать страницы к запуску таргетированной рекламы</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/crabic.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Не будете бояться рекламного кабинета</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/image.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Освоите механизмы и технические настройки</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/mens.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Сможете определять и сегментировать целевую аудиторию</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/cel.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Запуск рекламы станет для Вас обычным делом</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/v.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Получите алгоритм действий, освоите работу с плейсментами</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/money-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Начнете планировать бюджет</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/stars_one.jpg" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Узнаете, какие возможности дает пиксель</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/eyes.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Будете генерировать и отслеживать лиды</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/graffic-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Анализировать и оптимизировать</p>
+                                    </div>                        
+                            </div>
+                            
+                                                        
+                            
+                        </div>
+                        <div class="after__two-block after__two-block--text">
+                            <div class="after-content">
+                                <img src="./../img/icon_left/pad.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Узнаете, как работает кнопка «Продвигать»</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/roket.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Научитесь запускать объявления в Stories Instagram</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/phone-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Узнаете полезные сервисы</p>
+                                    </div>                        
+                            </div>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/graffic.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>Сможете составлять стратегию продвижения</p>
+                                    </div>                        
+                            </div>
+                            <p>
+                                Для того, чтобы начать зарабатывать в сфере digital создать станицу недостаточно. Продвижение в социальных сетях – это многоуровневый процесс. На наших курсах Вы также освоите алгоритмы и то, как их применять, научитесь запускать таргет, собирать и анализировать информацию. Это минимум, который Вы легко освоите. Но если Вы поймете, что готовы идти дальше и развиваться в этом направлении, то мы подберем программу обучения с более детальным погружением в определенном направлении.</p>                            
+                            <p>
+                                Платформа Инстаграм принадлежит Фейсбук, поэтому и настройка таргета идет через общий рекламный кабинет. Но прежде, чем погружаться в технические настройки, нужно понять какие цели Вы преследуете при размещении таргетинга. В зависимости от того, к какому результату Вы стремитесь при размещении, искусственный интеллект сформирует целевую аудиторию и подберет инструменты.
+                            </p>                            
+                        </div>    
+                    </div>
+                   
+            </div>
+        </section>
+
+        <section class="after__section ">
+            <div class="container">
+                <div class="after__wrapper">
+                   <div class="target_curses-babble--img">
+                        <svg class="liquid-button after__liquid-button"
+                        data-force-factor="0.1"
+                        data-layer-1-viscosity="0.5"
+                        data-layer-2-viscosity="0.4"
+                        data-layer-1-mouse-force="400"
+                        data-layer-2-mouse-force="500"
+                        data-layer-1-force-limit="1"
+                        data-layer-2-force-limit="2"
+                        data-color1="#FEBD29"
+                        data-color2="#FEBD29"
+                        data-color3="#FEBD29">
+                    </svg>
+                   </div> 
+                   <div class="after__section-content">
+                        <h2 class="after__section-title">Цели рекламы в SMM</h2>
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/star_big.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p class="medium">1. Конверсия</p>                                        
+                                        <p>Используется для направления пользователей на лендинг или сайт. Выбирая эту цель, у Вас будет возможность посчитать объем заявок и их стоимость. В дальнейшем информация пригодится для определения KPI и понимания ROI всего продвижения.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/man.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">  
+                                        <p class="medium">2. Сообщения</p>                                      
+                                        <p>Это относительно новая цель – воронка для отработки контактов. Ее задача переключить потенциального клиента на чат-бот или специалиста, готового ответить на все вопросы.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/phone-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text"> 
+                                        <p class="medium">3. Генерация лидов</p>                                       
+                                        <p>Это специальная лид-платформа, ее видят пользователи, в случае перехода по Вашему объявлению. Пользователь видит форму для заполнения данных. При этом потенциальный клиент не совершает лишних переходов – в директ или на сайт – все на площадке Инстаграма. По оценкам специалистов агентства «Веб фокус» эта цель дает хорошие результаты, легко настраивается и удобна клиентам.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/money-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">     
+                                        <p class="medium">4. Просмотры видео</p>                                   
+                                        <p>Это более сложная цель, эффективно работает в совокупности с другими – ретаргетингом или lookalike аудиторией. Детали расскажут наши эксперты на курсах по таргетингу в Инстаграм.</p>
+                                    </div>                        
+                            </div> 
+
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/v.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">   
+                                        <p class="medium">5. Вовлеченность</p>                                     
+                                        <p>Эта цель ориентирована больше не на продажу или приглашение на мероприятие. Она работает для сбора лайков, комментариев, поэтому искусственный интеллект социальной сети покажет ее той аудитории, которая более активна в этом.</p>
+                                        <p>Используют эту цель для:</p>
+                                        <p>1. Вовлеченности в публикациях</p>
+                                        <p>2.  Сбора «лайков» страницы</p>
+                                        <p>3.  Ответов на приглашения</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/graffic.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">   
+                                        <p class="medium">6. Трафик</p>                                     
+                                        <p>Главная задача этой цели – увеличение трафика. Инструменты рекламного кабинета сработают так, что Ваше объявление увидят в первую очередь те, кто перейдет по ссылке, спросит о стоимости товара или услуги, прокомментирует публикацию.</p>
+                                    </div>                        
+                            </div> 
+                            <p>Instagram для многих компаний и производителей стал основной маркетинговой площадкой, инструментом для продвижения товаров и услуг. Не теряйте время и присоединяйтесь к участникам курса рекламы в Инстаграм агентства «Веб Фокус».</p>                                     
+                </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <section class="interest__section">
+            <div class="container">
+                <div class="interest__wrapper">
+                    <div class="target__interest-img--end">
+                        <svg class="liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2"
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                    <div class="interest__block-content">
+                        <p>Если ты думаешь, что можешь записаться на курс завтра, то ошибаешься! Количество мест ограничено. Регистрируйся сейчас, пока не изменились условия участия.</p>
+                        <p class="interest__block-text">Заинтересовались? Заполните заявку и станьте специалистом SMM благодаря нашим курсам.
+                        </p>
+                        <div class="section__btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footet__block-info">
+                    <p>г. Минск, проспект Независмости 77</p>
+                    <a href="tel:+375291644000" class="footer-phone">+375 (29) 16 44 000</a>
+                    <a href="mail:courses@webfocus.by" class="footer__mail">courses@webfocus.by</a>
+                    <p class="footer__copirate">© 2020 Курсы SMM в Минске</p>
+                    </div>
+                    
+                <div class="footer__block-link">
+                    <a href="#form" class="footer__link-signUp">Записаться</a>
+                    <div class="footer__link-social">
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="footer__link-map">Карта Сайта</a>
+                    <a href="#" class="footer__link-privacy">Политика конфиденциальности</a>
+                    <p class="footer__copirate-hiden">© 2020 Курсы SMM в Минске</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./../js/script.js"></script>
+</body>
+</html>

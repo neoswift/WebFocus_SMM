@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/smm_start.css">
+</head>
+<body>
+    
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="facebook" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 29.9999C23.2842 29.9999 29.9999 23.2842 29.9999 14.9999C29.9999 6.7157 23.2842 0 15 0C6.71571 0 0 6.7157 0 14.9999C0 23.2842 6.71571 29.9999 15 29.9999Z"/>
+            <path d="M21.2719 6.41406H8.72792C7.45005 6.41406 6.41406 7.45 6.41406 8.72792V21.2719C6.41406 22.5499 7.45 23.5858 8.72792 23.5858H14.9145L14.9252 17.4497H13.3309C13.1237 17.4497 12.9555 17.2822 12.9548 17.075L12.947 15.0969C12.9462 14.8887 13.115 14.7193 13.3232 14.7193H14.9147V12.8081C14.9147 10.5903 16.2693 9.38259 18.2477 9.38259H19.8714C20.0789 9.38259 20.2475 9.55098 20.2475 9.75876V11.4265C20.2475 11.6343 20.0791 11.8027 19.8716 11.8027L18.8751 11.8033C17.7992 11.8033 17.5907 12.3145 17.5907 13.065V14.7196H19.955C20.1805 14.7196 20.3552 14.9163 20.3286 15.1399L20.0941 17.1179C20.0718 17.3073 19.9112 17.4499 19.7206 17.4499H17.6014L17.5907 23.5861H21.2719C22.5497 23.5861 23.5857 22.5501 23.5857 21.2722V8.72792C23.5858 7.45005 22.5498 6.41406 21.2719 6.41406Z" fill="white"/>
+            <path d="M14.914 23.5852L14.9247 17.4492H14.8984V23.5852H14.914Z" fill="white"/>
+        </symbol>
+
+        <symbol id="vk" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4334 21.579H15.6107C15.6107 21.579 15.9663 21.5399 16.1479 21.3442C16.315 21.1645 16.3096 20.8271 16.3096 20.8271C16.3096 20.8271 16.2867 19.2473 17.0198 19.0147C17.7426 18.7855 18.6707 20.5415 19.6544 21.2167C20.3983 21.7276 20.9636 21.6156 20.9636 21.6156L23.5939 21.579C23.5939 21.579 24.9699 21.4942 24.3174 20.4123C24.2639 20.3238 23.9375 19.612 22.3617 18.1494C20.7125 16.6186 20.9333 16.8662 22.92 14.2183C24.13 12.6056 24.6137 11.6211 24.4626 11.1994C24.3185 10.7978 23.4286 10.904 23.4286 10.904L20.467 10.9224C20.467 10.9224 20.2475 10.8925 20.0846 10.9898C19.9256 11.0853 19.8231 11.3077 19.8231 11.3077C19.8231 11.3077 19.3544 12.5556 18.7293 13.6169C17.4105 15.8563 16.8832 15.9745 16.6677 15.8354C16.1663 15.5114 16.2915 14.5335 16.2915 13.8388C16.2915 11.6687 16.6206 10.7639 15.6505 10.5296C15.3286 10.4518 15.0917 10.4005 14.2684 10.3922C13.2117 10.3812 12.3173 10.3954 11.8108 10.6435C11.4739 10.8085 11.214 11.1762 11.3723 11.1973C11.568 11.2235 12.0114 11.3168 12.2464 11.6369C12.5499 12.0497 12.5392 12.9771 12.5392 12.9771C12.5392 12.9771 12.7135 15.5317 12.132 15.8491C11.7327 16.0667 11.1851 15.6223 10.0094 13.5907C9.407 12.55 8.95217 11.3997 8.95217 11.3997C8.95217 11.3997 8.86446 11.1847 8.70804 11.0698C8.51819 10.9305 8.25294 10.8861 8.25294 10.8861L5.43867 10.9045C5.43867 10.9045 5.0162 10.9163 4.86111 11.1C4.72314 11.2634 4.85015 11.6013 4.85015 11.6013C4.85015 11.6013 7.05344 16.7561 9.54818 19.3538C11.8357 21.7354 14.4334 21.579 14.4334 21.579Z" fill="white"/>
+        </symbol>
+        <symbol id="instagram" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path d="M18.4703 6.41406H11.5295C8.70883 6.41406 6.41406 8.70883 6.41406 11.5295V18.4703C6.41406 21.2908 8.70883 23.5858 11.5296 23.5858H18.4703C21.2909 23.5858 23.5858 21.291 23.5858 18.4703V11.5295C23.5858 8.70883 21.291 6.41406 18.4703 6.41406ZM21.8583 18.4703C21.8583 20.3414 20.3414 21.8583 18.4703 21.8583H11.5296C9.65846 21.8583 8.14158 20.3414 8.14158 18.4703V11.5296C8.14158 9.65846 9.65846 8.14152 11.5296 8.14152H18.4703C20.3414 8.14152 21.8583 9.65852 21.8583 11.5296V18.4703Z" fill="white"/>
+            <path d="M15.0001 10.5581C12.5512 10.5581 10.5588 12.5505 10.5588 14.9994C10.5588 17.4481 12.5512 19.4405 15.0001 19.4405C17.4489 19.4405 19.4412 17.4483 19.4412 14.9994C19.4412 12.5505 17.4489 10.5581 15.0001 10.5581ZM15.0001 17.713C13.5013 17.713 12.2862 16.4982 12.2862 14.9994C12.2862 13.5006 13.5013 12.2856 15.0001 12.2856C16.4988 12.2856 17.7137 13.5005 17.7137 14.9994C17.7137 16.4982 16.4988 17.713 15.0001 17.713Z" fill="white"/>
+        </symbol>
+            
+    </svg>
+
+
+    <header class="header-nav">
+        <div class="container">
+            <div class="header-nav__row">
+                <a href="./../index.html" class="logo">
+                    <img src="./../img/header-nav/logo.svg" alt="logo" class="logo__img">
+                </a>
+                <ul class="header-nav__list">
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            Курсы
+                        </a>
+                        <ul class="white__list">
+                            <h2 class="header__menu-title">Курсы</h2>
+
+                            <li id="oh"><a href="./smm_start.html" class="menu__link" id="white__list">SMM для начинающих</a>
+                                <ul class="submenu" id="submenu">
+                                    <li><a href="./instagram.html" class="menu__link-two">Продвижение в Инстаграме</a></li>
+                                    <li><a href="./vk.html" class="menu__link-two">Продвижение ВКонтакте</a></li>
+                                    <li><a href="./facebook.html" class="menu__link-two">Продвижение в Facebook</a></li>
+                                    <li><a href="./ok.html" class="menu__link-two">Продвижение в Одноклассниках</a></li>
+                                    <li><a href="./youtube.html" class="menu__link-two">Продвижение на YouTube</a></li>
+                                    <li><a href="./telegram.html" class="menu__link-two">Продвижение в Telegram</a></li>
+                                    <li><a href="./twitter.html" class="menu__link-two">Продвижение в Twitter</a></li>
+                                </ul>
+                            </li>
+                            <li><a  href="./smm_manager.html" class="menu__link">Курсы для smm-менеджеров</a></li>
+                            <li id ="ah"><a href="./target__curses.html" class="menu__link">Курсы по таргетированной рекламе</a>
+                                <ul class="submenu-2" id="submenu-2">
+                                    <li><a href="./target__instagram.html" class="menu__link-two">Таргетированная реклама в Instagram</a></li>
+                                    <li><a href="./target__vk.html" class="menu__link-two">Таргетированная реклама ВКонтакте</a></li>
+                                    <li><a href="./target__facebook.html" class="menu__link-two">Таргетированная реклама в Facebook</a></li>
+                                </ul>       
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="list__item">
+                        <a href="#" class="list__link list__link-arrow">
+                            Дистанционное обучение
+                        </a>
+                        <ul class="white__list munu__link-list">
+
+                                    <li class="menu__link-dist"><a href="./online__curses-instagram.html" class="menu__link-two">Онлайн-курсы Instagram</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-vk.html" class="menu__link-two">Онлайн-курсы  ВКонтакте</a></li>                                    
+                                    <li class="menu__link-dist"><a href="./online__curses-youtube.html" class="menu__link-two">Онлайн-курсы  YouTube</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-smm.html" class="menu__link-two">Онлайн-курс SMM</a></li>
+                                    <li class="menu__link-dist"><a href="./online__vebinar_smm.html" class="menu__link-two">Вебинары по продвижению</a></li>
+
+                        </ul>                        
+                    </li>                        
+                
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            О нас
+                        </a></li>
+                
+                    <li class="list__item">
+                        <a href="" class="list__link">
+                            Контакты
+                        </a></li>
+
+                        <div class="social__link-hiden">
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                </ul>
+                <a href="" class="header-nav__search">
+                    <img src="./../img/header-nav/search.svg" alt="search" class="header-nav__search-img">
+                </a>
+                <button class="header-nav__phone">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                    <a href="tel:+375 (29) 16 44 000" class="header-nav__phone-number">+375 (29) 16 44 000</a>
+                </button>
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                  </div>
+                <div >
+            </div>
+        </div>
+        
+        
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="links">
+            <div class="container">
+                <div class="link_pages">     
+                    <a href="./../index.html" class="curses">Главная</a>
+                    &nbsp/&nbsp
+                    <a href="#" class="curses">Дистанционное обучение</a>
+                    &nbsp/&nbsp
+                    <a href="./online__curses-smm.html" class="curses">Онлайн-курсы SMM-продвижения</a>
+                </div>
+            </div>
+        </div>
+        <section class="section__curses_start">
+            <div class="container">
+                <div class="section__wrapper">
+                    <div class="section__start-content">                        
+                        <h1 class="section__start-title section__curses-title section__curses-title--big curses-title">
+                             <span>Онлайн-курсы</span> SMM-продвижения                    
+                        </h1>
+                        <p class="section__start-text section__curses-text">Наш дистанционный курс «SMM online» — это лучшие наработки по продвижению, поэтапные инструкции, дополненные новыми актуальными материалами.</p>
+                        <div class="section__btn start__section-btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="section__img curses_online-img">
+                        <svg class="liquid-button start__liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2"
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>         
+
+        <section class="curses__info">
+            <div class="container">
+                <div class="block__plus">
+                    <div class="block__plus-text  block__plus-two stars_psevdo">
+                        <p>Дистанционные курсы продвижения в социальных сетях включают вебинары, тренинги, конференции и индивидуальные мастер-классы. Программа рассчитана так, чтобы вы смогли не только освоить теорию, но и параллельно внедрять знания в свой проект.</p>
+                    </div>
+                    <div class="block__plus-text  block__plus-two stars_psevdo">
+                        <p>Онлайн-занятия подойдут мамам в декрете, людям с ограниченными возможностями по здоровью, студентам и пенсионерам. Наша дистанционная образовательная система – хороший способ освоить новую профессию с нуля.</p>
+                    </div>
+                    
+                    <div class="section__btn block__plus-btn">
+                        <a href="#form" class="button">Записаться</a>
+                    </div>
+                </div>
+            </div>           
+        </section>
+
+        <section class="two__colums">
+            <div class="container">
+                <h2 class="two__colums-title">Где учат на СММ-специалистов?</h2>
+                <div class="two__colums-wrapper">
+                    <div class="two__colums-text">
+                        <p>После курсов SMM онлайн по продвижению агентства «Веб Фокус» Ваша жизнь кардинально изменится!</p>
+                        <ul class="courses__content-text">
+                            <li class="yellow-line">Вы разберетесь в том, как работают социальные сети, чем отличаются и какие механизмы эффективнее.                                
+                            </li>
+                            <li class="yellow-line">Узнаете особенности продвижения в социальных сетях.
+                            </li>                            
+                            <li class="yellow-line">Проанализируете работу конкурентов и выстроите собственную стратегию продвижения бренда.
+                            </li>                            
+                            <li class="yellow-line">Если Вы владелец бизнеса, то по окончании онлайн-курса SMM, возьмете под контроль работу подчиненного или подрядчика, найдете новых заказчиков и увеличите доход..
+                            </li>                            
+                            <li class="yellow-line">Если Вы СММ-специалист, то после онлайн-курсов SMM-продвижение легко перейдете на фриланс, покинете скучную работу в офисе и начнете самостоятельно зарабатывать.
+                            </li>                            
+                        </ul>
+                        
+                    </div>
+                    <div class="two__colums-text">
+                        <p>Наша команда агентства «Веб Фокус» обучает продвижению в социальных сетях онлайн (курсы интернет-маркетинга). Эксперты дадут базовые знания, необходимые для взаимодействия с аудиторией social media. Для этого разработан дистанционный курс СММ по продвижению.</p>
+                        <p>Продвижение продукта или услуг в интернете – это главная задача СММ-менеджера. Грамотный специалист способен мыслить стратегически и выстраивать полную концепцию развития бренда.</p>
+                        <p>При этом некоторые полагают, что для настройки продвижения в сети достаточно наполнять сайт, составлять контент-план и настраивать рекламу – это не так. После окончания курсов СММ онлайн вы поймете разницу и организуете корректную работу интернет-площадок.</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section class="after__two">
+            <div class="container">
+                <h2 class="after__two_title">Чему вы научитесь
+                    на онлайн-курсе агентства «Веб Фокус»?</h2>
+                    <div class="after__two_wrapper">
+                        <div class="after__two-block">
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/star_big-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>1. Вы сформулируете цель, которую планируете достигнуть.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/cel.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>2. Мы научим Вас составлять стратегию продвижения бренда.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/hends-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>3. Эксперты агентства «Веб Фокус» расскажут, как разрабатывать креативные решения.</p>
+                                    </div>                        
+                            </div> 
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/portret.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>4. Мы расскажем Вам, как оформлять профиль, предоставим перечень программ для работы с дизайном фотографий и видео.</p>
+                                    </div>                        
+                            </div>                                      
+                        </div>
+                        <div class="after__two-block after__two-block--text">
+                                                        
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/pencl-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>5. На наших онлайн СММ-курсах Вы научитесь писать продающие посты.</p>
+                                    </div>                        
+                            </div>  
+
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/graffic.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>6. После тренингов Вы сможете анализировать статистику и формировать концепцию продвижения с учетом полученных данных.</p>
+                                    </div>                        
+                            </div>
+
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/phone-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>7. Мы проводим обучение по управлению механизмами таргета
+                                            в VK, Facebook и MyTarget.</p>
+                                    </div>                        
+                            </div>
+
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/money-3.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>8. Вы узнаете, как продавать свои услуги.</p>
+                                    </div>                        
+                            </div>
+                                  
+                        </div>    
+                    </div>                    
+            </div>
+        </section>
+
+        
+
+        <section id="form" class="section-form">
+            <div class="container">
+                <div class="form__block-hiden">
+                    <h2 class="form__block-text">Ваша заявка принята!</h2>
+                    <p>Менеджер свяжется с Вами в ближайшее время.</p>
+                    <div class="form__block-img"></div>
+                </div>
+
+                <div class="form__block">
+                    <div class="form__title">
+                        <h2 class="form__section-title">Записаться на курс или получить бесплатную консультацию</h2>
+                    </div>                
+                    <div class="form__wrapper">
+                        <form action="mailer/smart.php" method="POST" class="form">
+                            <input type="text" id="text" autocomplete="off" name="user_name" class="form_name" placeholder="Ваше имя" required>
+                            <input type="tel" id="tel" name="user_phone" class="form-input input-phone form_phone" placeholder="Телефон"  required>
+                            <input type="mail" id="mail" name="user_mail" class="form-input input-phone form_mail" placeholder="e-mail" pattern="[a-zA-Z_]+@[a-zA-Z_]+?.[a-zA-Z]{2,3}" required>
+									
+									<button class="form__btn form-button" type="submit" id="submit">Записаться</button>
+									<div class="form-small">
+                        </form>
+                            
+                    </div>
+                    <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
+                </div>
+
+                
+            </div>     
+        </section>
+
+        <section class="one__colums">
+            <div class="container">
+                <h2 class="one__colums-title--big2">Для чего нужно различать
+                    особенности каждой социальной сети?</h2>
+                <div class="two__colums-wrapper">
+                    <div class="one__colums-block">
+                        
+                        <p>Эта информация для тех, кто только начинает знакомство с профессией менеджера соцсетей. В первую очередь, вам необходимо уточнить, кто является целевой аудиторией Facebook, Instagram, «ВКонтакте», «Одноклассников». В зависимости от ваших целей (услуг, продукции, бренда), вы поймете, где лучше продвигаться. Осваивать все площадки одновременно неэффективно и дорого. Этой теме посвящен целый блок нашего медиа-курса.</p>
+
+                        <h3 class="skills__content-subtitle">От чего зависит результат СММ-продвижения?</h3> 
+
+                        <p>Команда наших специалистов одна из лучших в Минске. За плечами каждого эксперта большой опыт работы, которым они готовы поделиться. За годы в профессии наши СММ-менеджеры вывели формулу, по которой можно определить: будет ли результативным продвижение, какие инструменты эффективны для одних и совершенно бесполезны для других проектов.</p>
+
+                        <p>Вот от каких факторов это зависит:</p>
+
+                        <div class="after-content curses__after-content">
+                            <img src="./../img/icon_left/man.png" alt="img" class="left__img">
+                                <div class="curses__after-text">                                        
+                                    <p>Четкость при определении целевой аудитории (пол, возраст, круг интересов, социальный статус
+                                        и пр.).</p>
+                                </div>                        
+                        </div>
+                        <div class="after-content curses__after-content">
+                            <img src="./../img/icon_left/cel.png" alt="img" class="left__img">
+                                <div class="curses__after-text">                                        
+                                    <p>Качественно подобранный способ продвижения (гивы, рассылки в директ, розыгрыши и конкурсы, закупка рекламы у блогеров, таргет).</p>
+                                </div>                        
+                        </div>
+                        <div class="after-content curses__after-content">
+                            <img src="./../img/icon_left/good.png" alt="img" class="left__img">
+                                <div class="curses__after-text">                                        
+                                    <p>Грамотное использование методов продвижения.</p>
+                                </div>                        
+                        </div>
+                        
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="two__colums">
+            <div class="container">
+                <h2 class="two__colums-title">Где учат на СММ-специалистов?</h2>
+                <div class="two__colums-wrapper">
+                    <div class="two__colums-text">
+                        <p>Сайт, страница в социальных сетях, интернет-магазин, участие в сообществах – практически все, уважающие себя, компании имеют представительства в интернете. Это значительно расширяет географию продаж и клиентскую базу.</p>
+                        <p>Главное преимущество SMM-продвижения бизнеса в социальных сетях – возможность организовать диалог с клиентом без посредников и в отсутствие серьезных затрат на рекламу. Эксперты агентства «Веб фокус» среди преимуществ SMM-продвижения выделяют вирусность – быстрое распространение информации и разнообразие инструментов.</p>
+                        
+                        
+                    </div>
+                    <div class="two__colums-text">
+                        <p>Необходимо понимать, что рынок СММ-услуг активно растет, растет и конкуренция. Чтобы найти свое место, нужно не только освоить базовые навыки SMM-специальности, но и регулярно следить за тенденциями, обновлять рекламные стратегии.</p>
+                        <p>При неправильной и неаккуратной работе в социальных сетях существует риск блокировки аккаунта. О том, как не допустить этого, мы расскажем на онлайн-курсах по СММ-продвижению.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="after__section ">
+            <div class="container">
+                <div class="after__wrapper">
+                   <div class="target_curses-babble--img">
+                        <svg class="liquid-button after__liquid-button"
+                        data-force-factor="0.1"
+                        data-layer-1-viscosity="0.5"
+                        data-layer-2-viscosity="0.4"
+                        data-layer-1-mouse-force="400"
+                        data-layer-2-mouse-force="500"
+                        data-layer-1-force-limit="1"
+                        data-layer-2-force-limit="2"
+                        data-color1="#FEBD29"
+                        data-color2="#FEBD29"
+                        data-color3="#FEBD29">
+                    </svg>
+                   </div> 
+                   <div class="after__section-content">
+                        <h2 class="after__section-title">Вам нужно пройти SMM-курс онлайн, потому что:</h2>
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/book.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p>1. На сайте smm.webfocus.by разработан удобный образовательный формат.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/cinema.png" alt="img" class="left__img">
+                                    <div class="curses__after-text"> 
+                                        <p>2. Записи вебинаров и кейсы сохранятся в вашем личном кабинете.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/phone-3.png" alt="img" class="left__img">
+                                    <div class="curses__after-text"> 
+                                        <p>3. Вы получаете обратную связь при выполнении домашнего задания.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/mens-say.png" alt="img" class="left__img">
+                                    <div class="curses__after-text"> 
+                                        <p>4. Наши преподаватели не обладают учеными степенями, они на деле знают, как продвигать и продавать в социальных сетях.</p>
+                                    </div>                        
+                            </div> 
+
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/hends-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">  
+                                        <p>5. Наши специалисты будут вести Вас за руку весь период дистанционного обучения.</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/graffic-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p>6. Онлайн-обучение СММ продвижению проходит на реальном проекте с учетом актуальных данных статистики.</p> 
+                                    </div>                        
+                            </div> 
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/bubble.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p>7. По окончании дистанционного курса, Вы пройдете итоговое испытание и получите документ, подтверждающий уровень Вашей компетенции от агентства «Веб Фокус».</p> 
+                                    </div>                        
+                            </div> 
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/top.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">
+                                        <p>8. Вы станете СММ-специалистом, который сможет претендовать на должность менеджера социальных сетей в лучших компаниях Минска!</p> 
+                                    </div>                        
+                            </div> 
+
+                            <div class="text_block-online">
+                                <p>СММ-вебинары агентства «Веб Фокус» научат Вас ориентироваться в целевой аудитории, проводить анализ конкурентов, создавать стратегию продвижения в различных социальных сетях. Благодаря нашим экспертам Вы реализуете на практике стратегию продвижения, используя СММ-инструменты, а данные статистики помогут скорректировать работу. Для Вас не составит труда настроить таргетированную рекламу с минимальными потерями для бюджета. Вебинары СММ позволят Вам автоматизировать часть работы и повысить эффективность.</p> 
+                            </div>                             
+                                    
+                </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <section class="interest__section">
+            <div class="container">
+                <div class="interest__wrapper">
+                    <div class="curses_online-img--end">
+                        <svg class="liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2"
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                    <div class="interest__block-content">
+                        <p>Если ты думаешь, что можешь записаться на курс завтра, то ошибаешься! Количество мест ограничено. Регистрируйся сейчас, пока не изменились условия участия.</p>
+                        <p class="interest__block-text">Заинтересовались?
+                            Заполните заявку и станьте специалистом SMM благодаря нашим курсам.
+                            
+                        </p>
+                        <div class="section__btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footet__block-info">
+                    <p>г. Минск, проспект Независмости 77</p>
+                    <a href="tel:+375291644000" class="footer-phone">+375 (29) 16 44 000</a>
+                    <a href="mail:courses@webfocus.by" class="footer__mail">courses@webfocus.by</a>
+                    <p class="footer__copirate">© 2020 Курсы SMM в Минске</p>
+                    </div>
+                    
+                <div class="footer__block-link">
+                    <a href="#form" class="footer__link-signUp">Записаться</a>
+                    <div class="footer__link-social">
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="footer__link-map">Карта Сайта</a>
+                    <a href="#" class="footer__link-privacy">Политика конфиденциальности</a>
+                    <p class="footer__copirate-hiden">© 2020 Курсы SMM в Минске</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./../js/script.js"></script>
+</body>
+</html>

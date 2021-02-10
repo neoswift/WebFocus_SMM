@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/smm_start.css">
+</head>
+<body>
+    
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="facebook" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 29.9999C23.2842 29.9999 29.9999 23.2842 29.9999 14.9999C29.9999 6.7157 23.2842 0 15 0C6.71571 0 0 6.7157 0 14.9999C0 23.2842 6.71571 29.9999 15 29.9999Z"/>
+            <path d="M21.2719 6.41406H8.72792C7.45005 6.41406 6.41406 7.45 6.41406 8.72792V21.2719C6.41406 22.5499 7.45 23.5858 8.72792 23.5858H14.9145L14.9252 17.4497H13.3309C13.1237 17.4497 12.9555 17.2822 12.9548 17.075L12.947 15.0969C12.9462 14.8887 13.115 14.7193 13.3232 14.7193H14.9147V12.8081C14.9147 10.5903 16.2693 9.38259 18.2477 9.38259H19.8714C20.0789 9.38259 20.2475 9.55098 20.2475 9.75876V11.4265C20.2475 11.6343 20.0791 11.8027 19.8716 11.8027L18.8751 11.8033C17.7992 11.8033 17.5907 12.3145 17.5907 13.065V14.7196H19.955C20.1805 14.7196 20.3552 14.9163 20.3286 15.1399L20.0941 17.1179C20.0718 17.3073 19.9112 17.4499 19.7206 17.4499H17.6014L17.5907 23.5861H21.2719C22.5497 23.5861 23.5857 22.5501 23.5857 21.2722V8.72792C23.5858 7.45005 22.5498 6.41406 21.2719 6.41406Z" fill="white"/>
+            <path d="M14.914 23.5852L14.9247 17.4492H14.8984V23.5852H14.914Z" fill="white"/>
+        </symbol>
+
+        <symbol id="vk" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4334 21.579H15.6107C15.6107 21.579 15.9663 21.5399 16.1479 21.3442C16.315 21.1645 16.3096 20.8271 16.3096 20.8271C16.3096 20.8271 16.2867 19.2473 17.0198 19.0147C17.7426 18.7855 18.6707 20.5415 19.6544 21.2167C20.3983 21.7276 20.9636 21.6156 20.9636 21.6156L23.5939 21.579C23.5939 21.579 24.9699 21.4942 24.3174 20.4123C24.2639 20.3238 23.9375 19.612 22.3617 18.1494C20.7125 16.6186 20.9333 16.8662 22.92 14.2183C24.13 12.6056 24.6137 11.6211 24.4626 11.1994C24.3185 10.7978 23.4286 10.904 23.4286 10.904L20.467 10.9224C20.467 10.9224 20.2475 10.8925 20.0846 10.9898C19.9256 11.0853 19.8231 11.3077 19.8231 11.3077C19.8231 11.3077 19.3544 12.5556 18.7293 13.6169C17.4105 15.8563 16.8832 15.9745 16.6677 15.8354C16.1663 15.5114 16.2915 14.5335 16.2915 13.8388C16.2915 11.6687 16.6206 10.7639 15.6505 10.5296C15.3286 10.4518 15.0917 10.4005 14.2684 10.3922C13.2117 10.3812 12.3173 10.3954 11.8108 10.6435C11.4739 10.8085 11.214 11.1762 11.3723 11.1973C11.568 11.2235 12.0114 11.3168 12.2464 11.6369C12.5499 12.0497 12.5392 12.9771 12.5392 12.9771C12.5392 12.9771 12.7135 15.5317 12.132 15.8491C11.7327 16.0667 11.1851 15.6223 10.0094 13.5907C9.407 12.55 8.95217 11.3997 8.95217 11.3997C8.95217 11.3997 8.86446 11.1847 8.70804 11.0698C8.51819 10.9305 8.25294 10.8861 8.25294 10.8861L5.43867 10.9045C5.43867 10.9045 5.0162 10.9163 4.86111 11.1C4.72314 11.2634 4.85015 11.6013 4.85015 11.6013C4.85015 11.6013 7.05344 16.7561 9.54818 19.3538C11.8357 21.7354 14.4334 21.579 14.4334 21.579Z" fill="white"/>
+        </symbol>
+        <symbol id="instagram" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path d="M18.4703 6.41406H11.5295C8.70883 6.41406 6.41406 8.70883 6.41406 11.5295V18.4703C6.41406 21.2908 8.70883 23.5858 11.5296 23.5858H18.4703C21.2909 23.5858 23.5858 21.291 23.5858 18.4703V11.5295C23.5858 8.70883 21.291 6.41406 18.4703 6.41406ZM21.8583 18.4703C21.8583 20.3414 20.3414 21.8583 18.4703 21.8583H11.5296C9.65846 21.8583 8.14158 20.3414 8.14158 18.4703V11.5296C8.14158 9.65846 9.65846 8.14152 11.5296 8.14152H18.4703C20.3414 8.14152 21.8583 9.65852 21.8583 11.5296V18.4703Z" fill="white"/>
+            <path d="M15.0001 10.5581C12.5512 10.5581 10.5588 12.5505 10.5588 14.9994C10.5588 17.4481 12.5512 19.4405 15.0001 19.4405C17.4489 19.4405 19.4412 17.4483 19.4412 14.9994C19.4412 12.5505 17.4489 10.5581 15.0001 10.5581ZM15.0001 17.713C13.5013 17.713 12.2862 16.4982 12.2862 14.9994C12.2862 13.5006 13.5013 12.2856 15.0001 12.2856C16.4988 12.2856 17.7137 13.5005 17.7137 14.9994C17.7137 16.4982 16.4988 17.713 15.0001 17.713Z" fill="white"/>
+        </symbol>
+            
+    </svg>
+
+
+    <header class="header-nav">
+        <div class="container">
+            <div class="header-nav__row">
+                <a href="./../index.html" class="logo">
+                    <img src="./../img/header-nav/logo.svg" alt="logo" class="logo__img">
+                </a>
+                <ul class="header-nav__list">
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            Курсы
+                        </a>
+                        <ul class="white__list">
+                            <h2 class="header__menu-title">Курсы</h2>
+
+                            <li id="oh"><a href="./smm_start.html" class="menu__link" id="white__list">SMM для начинающих</a>
+                                <ul class="submenu" id="submenu">
+                                    <li><a href="./instagram.html" class="menu__link-two">Продвижение в Инстаграме</a></li>
+                                    <li><a href="./vk.html" class="menu__link-two">Продвижение ВКонтакте</a></li>
+                                    <li><a href="./facebook.html" class="menu__link-two">Продвижение в Facebook</a></li>
+                                    <li><a href="./ok.html" class="menu__link-two">Продвижение в Одноклассниках</a></li>
+                                    <li><a href="./youtube.html" class="menu__link-two">Продвижение на YouTube</a></li>
+                                    <li><a href="./telegram.html" class="menu__link-two">Продвижение в Telegram</a></li>
+                                    <li><a href="./twitter.html" class="menu__link-two">Продвижение в Twitter</a></li>
+                                </ul>
+                            </li>
+                            <li><a  href="./smm_manager.html" class="menu__link">Курсы для smm-менеджеров</a></li>
+                            <li id ="ah"><a href="./target__curses.html" class="menu__link">Курсы по таргетированной рекламе</a>
+                                <ul class="submenu-2" id="submenu-2">
+                                    <li><a href="./target__instagram.html" class="menu__link-two">Таргетированная реклама в Instagram</a></li>
+                                    <li><a href="./target__vk.html" class="menu__link-two">Таргетированная реклама ВКонтакте</a></li>
+                                    <li><a href="./target__facebook.html" class="menu__link-two">Таргетированная реклама в Facebook</a></li>
+                                </ul>       
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="list__item">
+                        <a href="#" class="list__link list__link-arrow">
+                            Дистанционное обучение
+                        </a>
+                        <ul class="white__list munu__link-list">
+
+                                    <li class="menu__link-dist"><a href="./online__curses-instagram.html" class="menu__link-two">Онлайн-курсы Instagram</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-vk.html" class="menu__link-two">Онлайн-курсы  ВКонтакте</a></li>                                    
+                                    <li class="menu__link-dist"><a href="./online__curses-youtube.html" class="menu__link-two">Онлайн-курсы  YouTube</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-smm.html" class="menu__link-two">Онлайн-курс SMM</a></li>
+                                    <li class="menu__link-dist"><a href="./online__vebinar_smm.html" class="menu__link-two">Вебинары по продвижению</a></li>
+
+                        </ul>                        
+                    </li>                        
+                
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            О нас
+                        </a></li>
+                
+                    <li class="list__item">
+                        <a href="" class="list__link">
+                            Контакты
+                        </a></li>
+
+                        <div class="social__link-hiden">
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                </ul>
+                <a href="" class="header-nav__search">
+                    <img src="./../img/header-nav/search.svg" alt="search" class="header-nav__search-img">
+                </a>
+                <button class="header-nav__phone">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                    <a href="tel:+375 (29) 16 44 000" class="header-nav__phone-number">+375 (29) 16 44 000</a>
+                </button>
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                  </div>
+                <div >
+            </div>
+        </div>
+        
+        
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="links">
+            <div class="container">
+                <div class="link_pages">     
+                    <a href="./../index.html" class="curses">Курсы</a>
+                    &nbsp/&nbsp
+                    <a href="./smm_start.html" class="curses">SMM для начинающих</a>
+                    &nbsp/&nbsp
+                    <a href="./youtube.html" class="curses">Курс "Продвижение в Одноклассниках (ОК)"</a>
+                </div>
+            </div>
+        </div>
+        <section class="section__curses_start">
+            <div class="container">
+                <div class="section__wrapper">
+                    <div class="section__start-content">                        
+                        <h1 class="section__start-title section__curses-title section__curses-title--big ok__hiden"> 
+                            Курс "Продвижение в <span>Одноклассниках</span> (ОК)"                        
+                        </h1>
+                        <div class="ok__hiden_text">
+                            Курс "Продвижение <br>в <span>Одноклассни-<br>ках</span> (ОК)" 
+                        </div>
+                        <p class="section__start-text section__curses-text">Программа «Продвижение Одноклассники» – лучший способ привлечь взрослую и платежеспособную аудиторию!</p>
+                        <div class="section__btn start__section-btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="section__img curses_smm-img">
+                        <svg class="liquid-button start__liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2"
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section class="curses__info">
+            <div class="container">
+                <div class="block__plus">
+                    <div class="block__plus-text  block__plus-two stars_psevdo">
+                        <p>Одноклассники в Беларуси занимают второе место по популярности. При этом 9 из 10 пользователей – жители регионов, что позволяет планировать стратегию развития на этой платформе с учетом интересов пользователей.м</p>
+                    </div>
+                    
+                    <div class="block__plus-text  block__plus-two stars_psevdo">
+                        <p>Более 70% – взрослая платежеспособная аудитория, которая относится к разным слоям общества и кругу интересов.</p>
+                    </div>
+                    
+                    <div class="section__btn block__plus-btn">
+                        <a href="#form" class="button">Записаться</a>
+                    </div>
+                </div>
+            </div>           
+        </section>
+
+        <section class="two__colums">
+            <div class="container">
+                <h2 class="two__colums-title">Интересные факты об Одноклассниках</h2>
+                <div class="two__colums-wrapper">
+                    <div class="two__colums-text">
+                        <p>По данным статистики экспертов агентства «Веб Фокус» этим ресурсом пользуются:</p>
+                         <div class="two__colums-text--wrapper">
+                             <div class="two__colums-block--grafick">
+                                 <div class="grafick_block grafick_block-1"></div>
+                                 <div class="grafick_block grafick_block-2"></div>
+                                 <div class="grafick_block grafick_block-3"></div>
+                                 <div class="grafick_block grafick_block-4"></div>
+                             </div>
+                             <div class="two__colums-block--text grafick_block-text">
+                                 <p class="grafick_block">специалисты коммерческих организаций (22%)</p>
+                                 <p class="grafick_block">служащие госструктур (20%)</p>
+                                 <p class="grafick_block">руководители разного уровня (17%)</p>
+                                 <p class="grafick_block">домохозяйки (7%)</p>
+                             </div>
+                         </div>       
+
+                    </div>
+                    <div class="two__colums-text">
+                        <p>За 6 месяцев популярность ресурса увеличилась на 7-10%. Значит пришло время усилить продажи и освоить принципы раскрутки в ОК. Курсы продвижения в Одноклассниках состоят из нескольких блоков по изучения методов SMM. Лекции ведут лучшие специалисты Минска по социальным сетям, маркетингу и рекламе.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">                
+                <div class="info__wrapper">
+                 <h2 class="cursec__smm_duties-title">Для чего нужны курсы Twitter:</h2>
+                    <div class="smm__duties">
+                        <div class="duties__block">
+                            <div class="duties__block-wrapper">
+                                <div class="courses__duties_block-content yellow_circle">
+                                    <p class="duties-subtitle">Научитесь разрабатывать контент с учетом интересов и активности пользователей</p>
+                                    <img src="./../img/icon_left/mens.png" alt="img" class="img_right">
+                                </div>
+
+                                <div class="courses__duties_block-content yellow_circle">
+                                    <p class="duties-subtitle">Изучите опыт работы с постами</p>
+                                   <img src="./../img/icon_left/pencl.png" alt="img" class="img_right">
+                                </div>
+
+                                <div class="courses__duties_block-content yellow_circle">
+                                    <p class="duties-subtitle">Сможете ориентироваться в формах продвижения, увеличивать охват</p>
+                                    <img src="./../img/icon_left/spiker.png" alt="img" class="img_right">
+                                </div>                               
+                                <div class="courses__duties_block-content yellow_circle">
+                                    <p class="duties-subtitle">Освоите технологии работы таргетированной рекламы</p>
+                                    <img src="./../img/icon_left/cel.png" alt="img" class="img_right">
+                                </div>                               
+                                <div class="courses__duties_block-content yellow_circle">
+                                    <p class="duties-subtitle">Появится возможность самостоятельно создавать рекламные кампании</p>
+                                    <img src="./../img/icon_left/puzzle.png" alt="img" class="img_right">
+                                </div>                               
+                            </div>
+                            
+                        </div>
+                         <div class="duties__block">
+                            <div class="duties__block-text">
+                                <p>
+                                    Социальная сеть Одноклассники перестала быть ресурсом, где активность проявляют любители мемов, кулинарных рецептов и открыток из интернета. Сейчас – это платформа для развития бизнеса. Сотни компаний, предпринимателей и фрилансеров используют площадку для рекламы. Главное – правильно определить целевую аудиторию и составить стратегию. На это сделан акцент образовательной программы «Продвижение Одноклассники» агентства «Веб Фокус».
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="skills__section">
+            <div class="container">                
+                <div class="skills__wrapper">                    
+                    <div class="skills__content"> 
+                        <h2 class="skills__content-title">Как заработать в Одноклассниках?</h2> 
+                           
+                            <ul class="skills__content-text">
+                                <li class="yellow-line">Создать платформу – сообщество. Определить оригинальную тематику, которая привлечет внимание пользователей</li>
+                                <li class="yellow-line">Инвайтинг – заполняем сообщество аудиторией</li>
+                                <li class="yellow-line">Проводить конкурсы и опросы</li>
+                                <li class="yellow-line">Размещать рекламу в других группах</li>
+                                <li class="yellow-line">Публиковать вирусные посты</li>
+                                <li class="yellow-line">Использовать таргет</li>
+                            </ul> 
+                            
+                        <h3 class="skills__content-subtitle">Специалисты агентства «Веб Фокус» выделяют следующие плюсы продвижения компании в ОК:</h3> 
+                        <p>Оk.ru – социальная сеть, которая не так давно в Беларуси уступила лидирующие позиции «Вконтакте». Ежедневно платформу посещают миллионы пользователей. Социальная сеть наиболее популярна в русскоязычном сегменте по всему миру опережает даже показатели посещаемости Фейсбук.</p>
+                        <p>Большая часть аудитории – люди от 25 до 44 лет. Они регулярно изучают информацию о технических новинках, ремонте, правилах здорового питания, туристических путевках и новинках мира моды. Самое время освоить принципы продвижения в Одноклассниках, чтобы начать зарабатывать, удовлетворяя интересы пользователей.</p>   
+                    </div>
+                    <div class="skills__block-img curses__skills_block">
+                        <div class="skills__block-img--wrapper">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                  </div>
+                                  <div class="flip-card-back-1">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                  </div>
+                                  <div class="flip-card-back-2">
+                                  </div>
+                                </div>
+                            </div><div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                  </div>
+                                  <div class="flip-card-back-3">
+                                  </div>
+                                </div>
+                            </div><div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                  </div>
+                                  <div class="flip-card-back-4">
+                                  </div>
+                                </div>
+                            </div><div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                  </div>
+                                  <div class="flip-card-back-5">
+                                  </div>
+                                </div>
+                            </div><div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                  </div>
+                                  <div class="flip-card-back-6">
+                                  </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+            </div>
+        </section>        
+
+        <section id="form" class="section-form">
+            <div class="container">
+                <div class="form__block-hiden">
+                    <h2 class="form__block-text">Ваша заявка принята!</h2>
+                    <p>Менеджер свяжется с Вами в ближайшее время.</p>
+                    <div class="form__block-img"></div>
+                </div>
+
+                <div class="form__block">
+                    <div class="form__title">
+                        <h2 class="form__section-title">Записаться на курс или получить бесплатную консультацию</h2>
+                    </div>                
+                    <div class="form__wrapper">
+                        <form action="mailer/smart.php" method="POST" class="form">
+                            <input type="text" id="text" autocomplete="off" name="user_name" class="form_name" placeholder="Ваше имя" required>
+                            <input type="tel" id="tel" name="user_phone" class="form-input input-phone form_phone" placeholder="Телефон"  required>
+                            <input type="mail" id="mail" name="user_mail" class="form-input input-phone form_mail" placeholder="e-mail" pattern="[a-zA-Z_]+@[a-zA-Z_]+?.[a-zA-Z]{2,3}" required>
+									
+									<button class="form__btn form-button" type="submit" id="submit">Записаться</button>
+									<div class="form-small">
+                        </form>
+                            
+                    </div>
+                    <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
+                </div>
+
+                
+            </div>     
+        </section>
+
+        <section class="after__two">
+            <div class="container">
+                <h2 class="after__two_title">Среди приоритетов продвижения в Одноклассниках эксперты «Веб Фокус» выделяют:</h2>
+                    <div class="after__two_wrapper">
+                        <div class="after__two-block">
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/image.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p class="medium">Функциональность</p>
+                                        <p>Инструменты этой социальной сети позволяют рекламировать и развивать профиль.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/sey.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p class="medium">Коммуникации</p>
+                                        <p>Пользователи воспринимают площадку для общения без формальностей, что позволяет увеличить продажи и донести информацию до целевой аудитории.</p>
+                                    </div>                        
+                            </div>                                                              
+                        </div>
+                        <div class="after__two-block after__two-block--text">
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/graffic.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p class="medium">Широкая зона охвата</p>
+                                        <p>Целевая аудитория ОК находится на территории всей страны.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content curses__after-content">
+                                <img src="./../img/icon_left/cel.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p class="medium">«Белое» продвижение</p>
+                                        <p>Администрация Одноклассников четко следит за накрутками и спамом. Что дает вам возможность, развивать сообщество не используя обманные методы.</p>
+                                    </div>                        
+                            </div>                            
+                        </div>    
+                    </div>                    
+            </div>
+        </section>
+
+        <section class="one__colums">
+            <div class="container">
+                <div class="one__colums-block">
+                    <h2 class="one__colums-title">Как проходит обучение в агентстве «Веб Фокус»?</h2>
+                <p>Занятия по курсу Одноклассники проходят в очной форме. В аудитории занимаются группы до 10 человек. Помещение оборудовано компьютерами для выполнения практических заданий во время занятий. За каждой группой закреплен куратор, который готов проконсультировать по всем организационным и техническим вопросам.</p>
+                <p>После курса вы освоите техники развития личного бренда и корпоративного профиля на этой платформе. Научитесь создавать, оформлять группу и размещать контент, который будет работать на вас.</p>
+                <p>Не лишними будут базовые знания пользования компьютером, а также поисковыми системами. Пригодиться и личный профиль.</p>
+                </div>                
+            </div>
+        </section>
+
+        <section class="whom__section">
+            <div class="container">
+                <h2 class="whom__section-title">Кому будут полезна образовательная программа?</h2>
+                <div class="whom__section-wrapper">
+                    <div class="curses__whorm-content">
+                        <img src="./../img/face/whom_face3.png" alt="face" class="whom_img">
+                        <p class="text-bold-14">SMM-менеджерам</p>
+                        <p>У вас появится возможность расширить целевую аудиторию, освоить новые механизмы продвижения в Одноклассниках, найти новые ниши для заработка.</p>
+                    </div>
+                    <div class="curses__whorm-content">
+                        <img src="./../img/face/whom_face1.png" alt="face" class="whom_img">
+                        <p class="text-bold-14">Начинающим специалистам</p>
+                        <p>Вы узнаете, как зарабатывать в социальных сетях, продвигать личный бренд и брать заказы для продвижения в ОК, соберете портфолио.</p>
+                    </div>
+                    <div class="curses__whorm-content">
+                        <img src="./../img/face/whom_face2.png" alt="face" class="whom_img whom__img-man">
+                        <p class="text-bold-14">Предпринимателям как хобби</p>
+                        <p>Вы сможете продвигать и рекламировать продукцию, используя современные механизмы, увеличите доход и поднимете продажи.</p>
+                    </div>
+                    <div class="curses__whorm-content">
+                        <img src="./../img/face/man_good-3.png" alt="face" class="whom_img whom__img-man">
+                        <p class="text-bold-14">Представителям малого и среднего бизнеса</p>
+                        <p>Освоите принципы продаж в социальных сетях, возьмете под контроль работу смм-специалистам, при желании, сможете самостоятельно продвигать бизнес в ОК.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="one__colums">
+            <div class="container">
+                <div class="one__colums-block">
+                    <h2 class="one__colums-title one__colums-title--big">Краткая программа продвижение Одноклассники в SMM-школе агентства «Веб Фокус»:</h2>
+                    <div class="duties__block">
+                        <div class="duties__block-wrapper">                         
+                            <div class="courses__duties_block-content-2">
+                                <p class="yellow-text"><span>Модуль 1.</span>  Особенности социальной сети</p>
+                               <img src="./../img/icon_left/phone-2.png" alt="img" class="img_right">
+                            </div>
+
+                            <div class="courses__duties_block-content-2">
+                                <p class="yellow-text"><span>Модуль 2.</span> Что можно продвигать в ОК</p>
+                                <img src="./../img/icon_left/graffic.png" alt="img" class="img_right">
+                            </div>
+
+                            <div class="courses__duties_block-content-2">
+                                <p class="yellow-text"><span>Модуль 3.</span> Создание и настройка группы</p>
+                                <img src="./../img/icon_left/pencl.png" alt="img" class="img_right">
+                            </div>
+                        
+                            <div class="courses__duties_block-content-2">
+                                <p class="yellow-text"><span>Модуль 4.</span> Контент-план</p>
+                                <img src="./../img/icon_left/cinema.png" alt="img" class="img_right">
+                            </div>
+
+                            <div class="courses__duties_block-content-2">
+                                <p class="yellow-text"><span>Модуль 5.</span> Продвижение в Одноклассниках</p>
+                                <img src="./../img/icon_left/spiker.png" alt="img" class="img_right">
+                            </div>
+                            <div class="courses__duties_block-content-2">
+                                <p class="yellow-text"><span>Модуль 6.</span> Таргетинг. Виджеты. Комьюнити</p>
+                                <img src="./../img/icon_left/cel.png" alt="img" class="img_right">
+                            </div>
+                            <div class="courses__duties_block-content-2">
+                                <p class="yellow-text"><span>Модуль 7.</span>  Статистика и анализ</p>
+                                <img src="./../img/icon_left/graffic-2.png" alt="img" class="img_right">
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                <p>На курсах вы узнаете, какой бизнес наиболее выгодно продвигать в ОК. Мы научим определять целевую аудиторию, под которую создадим группу. Изучим, как работают платные и бесплатные механизмы для раскрутки группы в социальной сети. Вы узнаете, как проводить конкурсы, какие дают лучший результат и что эффективней выставлять в качестве приза для победителей.</p>
+                <p>Курс ОК – это пошаговый план развития бизнеса в социальных сетях. В социальных сетях свое присутствие обозначат большинство уважающих себя компаний. Небольшие ведут профили самостоятельно, крупные набирают в штат специалистов. Рынок ежедневно нуждается в смм-менеджерах. Если ты еще сомневаешься, нужен ли тебе курс – не сомневайся!</p>
+                <p>Идеальное сочетание теории и практики позволит заняться раскруткой во время обучения. На лекциях агентства «Веб Фокус» вы получите кейсы и подробный чек-лист раскрутки профиля.</p>
+                <p>Сейчас важно успеть стать участником образовательной программы «Продвижение Одноклассники».</p>
+                </div>                
+            </div>
+        </section>
+
+
+        
+
+
+
+
+
+        <section class="interest__section">
+            <div class="container">
+                <div class="interest__wrapper">
+                    <div class="curses__interest-img">
+                        <svg class="liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2"
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                    <div class="interest__block-content">
+                        <p>Если ты думаешь, что можешь записаться на курс завтра, то ошибаешься! Количество мест ограничено. Регистрируйся сейчас, пока не изменились условия участия.</p>
+                        <p class="interest__block-text">Заинтересовались?
+                            Заполните заявку и станьте специалистом SMM благодаря нашим курсам.
+                            
+                        </p>
+                        <div class="section__btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footet__block-info">
+                    <p>г. Минск, проспект Независмости 77</p>
+                    <a href="tel:+375291644000" class="footer-phone">+375 (29) 16 44 000</a>
+                    <a href="mail:courses@webfocus.by" class="footer__mail">courses@webfocus.by</a>
+                    <p class="footer__copirate">© 2020 Курсы SMM в Минске</p>
+                    </div>
+                    
+                <div class="footer__block-link">
+                    <a href="#form" class="footer__link-signUp">Записаться</a>
+                    <div class="footer__link-social">
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="footer__link-map">Карта Сайта</a>
+                    <a href="#" class="footer__link-privacy">Политика конфиденциальности</a>
+                    <p class="footer__copirate-hiden">© 2020 Курсы SMM в Минске</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./../js/script.js"></script>
+</body>
+</html>

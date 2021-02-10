@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/smm_start.css">
+    <link rel="stylesheet" href="./../slick/slick.css">
+    <link rel="stylesheet" href="./../slick/slick-theme.css">
+</head>
+<body>
+    
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="facebook" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 29.9999C23.2842 29.9999 29.9999 23.2842 29.9999 14.9999C29.9999 6.7157 23.2842 0 15 0C6.71571 0 0 6.7157 0 14.9999C0 23.2842 6.71571 29.9999 15 29.9999Z"/>
+            <path d="M21.2719 6.41406H8.72792C7.45005 6.41406 6.41406 7.45 6.41406 8.72792V21.2719C6.41406 22.5499 7.45 23.5858 8.72792 23.5858H14.9145L14.9252 17.4497H13.3309C13.1237 17.4497 12.9555 17.2822 12.9548 17.075L12.947 15.0969C12.9462 14.8887 13.115 14.7193 13.3232 14.7193H14.9147V12.8081C14.9147 10.5903 16.2693 9.38259 18.2477 9.38259H19.8714C20.0789 9.38259 20.2475 9.55098 20.2475 9.75876V11.4265C20.2475 11.6343 20.0791 11.8027 19.8716 11.8027L18.8751 11.8033C17.7992 11.8033 17.5907 12.3145 17.5907 13.065V14.7196H19.955C20.1805 14.7196 20.3552 14.9163 20.3286 15.1399L20.0941 17.1179C20.0718 17.3073 19.9112 17.4499 19.7206 17.4499H17.6014L17.5907 23.5861H21.2719C22.5497 23.5861 23.5857 22.5501 23.5857 21.2722V8.72792C23.5858 7.45005 22.5498 6.41406 21.2719 6.41406Z" fill="white"/>
+            <path d="M14.914 23.5852L14.9247 17.4492H14.8984V23.5852H14.914Z" fill="white"/>
+        </symbol>
+
+        <symbol id="vk" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4334 21.579H15.6107C15.6107 21.579 15.9663 21.5399 16.1479 21.3442C16.315 21.1645 16.3096 20.8271 16.3096 20.8271C16.3096 20.8271 16.2867 19.2473 17.0198 19.0147C17.7426 18.7855 18.6707 20.5415 19.6544 21.2167C20.3983 21.7276 20.9636 21.6156 20.9636 21.6156L23.5939 21.579C23.5939 21.579 24.9699 21.4942 24.3174 20.4123C24.2639 20.3238 23.9375 19.612 22.3617 18.1494C20.7125 16.6186 20.9333 16.8662 22.92 14.2183C24.13 12.6056 24.6137 11.6211 24.4626 11.1994C24.3185 10.7978 23.4286 10.904 23.4286 10.904L20.467 10.9224C20.467 10.9224 20.2475 10.8925 20.0846 10.9898C19.9256 11.0853 19.8231 11.3077 19.8231 11.3077C19.8231 11.3077 19.3544 12.5556 18.7293 13.6169C17.4105 15.8563 16.8832 15.9745 16.6677 15.8354C16.1663 15.5114 16.2915 14.5335 16.2915 13.8388C16.2915 11.6687 16.6206 10.7639 15.6505 10.5296C15.3286 10.4518 15.0917 10.4005 14.2684 10.3922C13.2117 10.3812 12.3173 10.3954 11.8108 10.6435C11.4739 10.8085 11.214 11.1762 11.3723 11.1973C11.568 11.2235 12.0114 11.3168 12.2464 11.6369C12.5499 12.0497 12.5392 12.9771 12.5392 12.9771C12.5392 12.9771 12.7135 15.5317 12.132 15.8491C11.7327 16.0667 11.1851 15.6223 10.0094 13.5907C9.407 12.55 8.95217 11.3997 8.95217 11.3997C8.95217 11.3997 8.86446 11.1847 8.70804 11.0698C8.51819 10.9305 8.25294 10.8861 8.25294 10.8861L5.43867 10.9045C5.43867 10.9045 5.0162 10.9163 4.86111 11.1C4.72314 11.2634 4.85015 11.6013 4.85015 11.6013C4.85015 11.6013 7.05344 16.7561 9.54818 19.3538C11.8357 21.7354 14.4334 21.579 14.4334 21.579Z" fill="white"/>
+        </symbol>
+        <symbol id="instagram" width="30" height="30" viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"/>
+            <path d="M18.4703 6.41406H11.5295C8.70883 6.41406 6.41406 8.70883 6.41406 11.5295V18.4703C6.41406 21.2908 8.70883 23.5858 11.5296 23.5858H18.4703C21.2909 23.5858 23.5858 21.291 23.5858 18.4703V11.5295C23.5858 8.70883 21.291 6.41406 18.4703 6.41406ZM21.8583 18.4703C21.8583 20.3414 20.3414 21.8583 18.4703 21.8583H11.5296C9.65846 21.8583 8.14158 20.3414 8.14158 18.4703V11.5296C8.14158 9.65846 9.65846 8.14152 11.5296 8.14152H18.4703C20.3414 8.14152 21.8583 9.65852 21.8583 11.5296V18.4703Z" fill="white"/>
+            <path d="M15.0001 10.5581C12.5512 10.5581 10.5588 12.5505 10.5588 14.9994C10.5588 17.4481 12.5512 19.4405 15.0001 19.4405C17.4489 19.4405 19.4412 17.4483 19.4412 14.9994C19.4412 12.5505 17.4489 10.5581 15.0001 10.5581ZM15.0001 17.713C13.5013 17.713 12.2862 16.4982 12.2862 14.9994C12.2862 13.5006 13.5013 12.2856 15.0001 12.2856C16.4988 12.2856 17.7137 13.5005 17.7137 14.9994C17.7137 16.4982 16.4988 17.713 15.0001 17.713Z" fill="white"/>
+        </symbol>
+        <symbol id="arrow_slider-left" width="44" height="14" viewBox="0 0 44 14">
+            
+                <path d="M43.8555 7H0.998325M0.998325 7L6.99833 1M0.998325 7L6.99833 13"/>         
+
+        </symbol>
+        <symbol id="arrow_slider-right" width="44" height="14" viewBox="0 0 44 14" >
+           
+                <path d="M0 7H42.8571M42.8571 7L36.8571 1M42.8571 7L36.8571 13" />
+
+        </symbol>
+            
+    </svg>
+
+
+    <header class="header-nav">
+        <div class="container">
+            <div class="header-nav__row">
+                <a href="./../index.html" class="logo">
+                    <img src="./../img/header-nav/logo.svg" alt="logo" class="logo__img">
+                </a>
+                <ul class="header-nav__list">
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            Курсы
+                        </a>
+                        <ul class="white__list">
+                            <h2 class="header__menu-title">Курсы</h2>
+
+                            <li id="oh"><a href="./smm_start.html" class="menu__link" id="white__list">SMM для начинающих</a>
+                                <ul class="submenu" id="submenu">
+                                    <li><a href="./instagram.html" class="menu__link-two">Продвижение в Инстаграме</a></li>
+                                    <li><a href="./vk.html" class="menu__link-two">Продвижение ВКонтакте</a></li>
+                                    <li><a href="./facebook.html" class="menu__link-two">Продвижение в Facebook</a></li>
+                                    <li><a href="./ok.html" class="menu__link-two">Продвижение в Одноклассниках</a></li>
+                                    <li><a href="./youtube.html" class="menu__link-two">Продвижение на YouTube</a></li>
+                                    <li><a href="./telegram.html" class="menu__link-two">Продвижение в Telegram</a></li>
+                                    <li><a href="./twitter.html" class="menu__link-two">Продвижение в Twitter</a></li>
+                                </ul>
+                            </li>
+                            <li><a  href="./smm_manager.html" class="menu__link">Курсы для smm-менеджеров</a></li>
+                            <li id ="ah"><a href="./target__curses.html" class="menu__link">Курсы по таргетированной рекламе</a>
+                                <ul class="submenu-2" id="submenu-2">
+                                    <li><a href="./target__instagram.html" class="menu__link-two">Таргетированная реклама в Instagram</a></li>
+                                    <li><a href="./target__vk.html" class="menu__link-two">Таргетированная реклама ВКонтакте</a></li>
+                                    <li><a href="./target__facebook.html" class="menu__link-two">Таргетированная реклама в Facebook</a></li>
+                                </ul>       
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="list__item">
+                        <a href="#" class="list__link list__link-arrow">
+                            Дистанционное обучение
+                        </a>
+                        <ul class="white__list munu__link-list">
+
+                                    <li class="menu__link-dist"><a href="./online__curses-instagram.html" class="menu__link-two">Онлайн-курсы Instagram</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-vk.html" class="menu__link-two">Онлайн-курсы  ВКонтакте</a></li>                                    
+                                    <li class="menu__link-dist"><a href="./online__curses-youtube.html" class="menu__link-two">Онлайн-курсы  YouTube</a></li>
+                                    <li class="menu__link-dist"><a href="./online__curses-smm.html" class="menu__link-two">Онлайн-курс SMM</a></li>
+                                    <li class="menu__link-dist"><a href="./online__vebinar_smm.html" class="menu__link-two">Вебинары по продвижению</a></li>
+
+                        </ul>                        
+                    </li>                        
+                
+                    <li class="list__item">
+                        <a href="" class="list__link list__link-arrow">
+                            О нас
+                        </a></li>
+                
+                    <li class="list__item">
+                        <a href="" class="list__link">
+                            Контакты
+                        </a></li>
+
+                        <div class="social__link-hiden">
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link__social">
+                                <svg class="link__socials-icon" width="30" height="30">
+                                    <use href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                </ul>
+                <a href="" class="header-nav__search">
+                    <img src="./../img/header-nav/search.svg" alt="search" class="header-nav__search-img">
+                </a>
+                <button class="header-nav__phone">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                    <a href="tel:+375 (29) 16 44 000" class="header-nav__phone-number">+375 (29) 16 44 000</a>
+                </button>
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                  </div>
+                <div >
+            </div>
+        </div>
+        
+        
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="links">
+            <div class="container">
+                <div class="link_pages">     
+                    <a href="./../index.html" class="curses">Курсы</a>
+                    &nbsp/&nbsp
+                    <a href="./smm_start.html" class="curses">SMM для начинающих</a>
+                    &nbsp/&nbsp
+                    <a href="./facebook.html" class="curses">Курс "Продвижение в Facebook (Фейсбук)"</a>
+                </div>
+            </div>
+        </div>
+        <section class="section__curses_start">
+            <div class="container">
+                <div class="section__wrapper">
+                    <div class="section__start-content">                        
+                        <h1 class="section__curses-title--facebook">
+                            Курс <br> "Продвижение в <span>Facebook</span> (Фейсбук)"                          
+                        </h1>
+                        <p class="section__start-text section__curses-text--facebook">Мы запускаем новый курс Фейсбук
+                            от агентства «Веб Фокус»!</p>
+                        <div class="section__btn start__section-btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="section__img curses_smm-img">
+                        <svg class="liquid-button start__liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2" 
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section class="curses__info">
+            <div class="container">
+                <p>Для чего нужен курс по продвижению в Facebook </p>
+                <div class="curses__block_plus">
+                    <div class="block__plus-text  block__plus-three stars_psevdo">
+                        <p>Facebook – одна из крупнейших социальных сетей в мире. На этой площадке ежедневно размещают рекламу миллионы компаний, здесь регистрируется 93% SMM-акций.</p>
+                    </div>
+                    <div class="block__plus-text  block__plus-three stars_psevdo">
+                        <p>Аккаунты в этой социальной сети имеет четверть населения Земли. При точном определении целевой аудитории реклама, размещенная Facebook, дает гарантированный результат.</p>
+                    </div>                    
+                    <div class="block__plus-text  block__plus-three stars_psevdo">
+                        <p>Как настроить рекламу, определить целевую аудиторию, выстраивать маркетинговую компанию и работать с инструментами Facebook? Ответы на эти вопросы вы получите на курсе Facebook
+                            в агентстве «Веб Фокус».</p>
+                    </div>                    
+                    <div class="section__btn block__plus-btn">
+                        <a href="#form" class="button">Записаться</a>
+                    </div>
+                </div>
+            </div>           
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <h2 class="info__smm-title info__smm-title-facebook">Что Вы получите после прохождения курсов SMM</h2>
+                <div class="info__wrapper">
+                    <div class="info__smm">                    
+                        <div class="info__smm-block">
+                            <div class="info__smm-content">
+                                <img src="./../img/icon_left/money-2.png" alt="img" class="left__img">
+                                <div class="info__smm-content--text">                                 
+                                <p>Научитесь продавать через Фейсбук – услуги, консультации, тренинги, курсы, информационные продукты и различные товары.</p>
+                                </div>                                
+                            </div>
+                            <div class="info__smm-content">
+                                <img src="./../img/icon_left/cel.png" alt="img" class="left__img">
+                                <div class="info__smm-content--text">                                
+                                <div class="info__smm-content--text"></div>
+                                <p>Узнаете, как распределить бюджет на рекламную кампанию так, чтобы вложения окупились.</p>
+                                </div>
+                            </div>                                
+                            <div class="info__smm-content">
+                                <img src="./../img/icon_left/light.png" alt="img" class="left__img">
+                                <div class="info__smm-content--text">                                
+                                <p>Получите знания, которые помогут увеличить прибыль.</p>
+                                </div>                                
+                            </div>
+                            <div class="info__smm-content">
+                                <img src="./../img/icon_left/book.png" alt="img" class="left__img">
+                                <div class="info__smm-content--text">                              
+                                <p>После наших тренингов многие из ваших подписчиков захотят получить услугу или приобрести продукт, который Вы продвигаете.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="info__smm-block">
+                            <div class="info__smm-content">                               
+                                <div class="info__smm-content--text">                                 
+                                <p>Курс Фейсбук для людей, которые планируют достичь цели, работать на результат, быстро развиваться и получать отдачу от вложенных средств. В образовательной программе от агентства «Веб Фокус» пошаговые инструкции, отработанные алгоритмы и проверенные механизмы.</p>
+                                </div>                                
+                            </div>                            
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </section>
+
+        <section class="whom__section">
+            <div class="container">
+                <h2 class="whom__section-title-facebook">Курсы по обучению Facebook от агентства «Веб Фокус» подходят:</h2>
+                <div class="whom__section-wrapper">
+                    <div class="whom__section-content whom__section-content--small">
+                        <img src="./../img/face/smile_girl-2.png" alt="face" class="whom_img">
+                        <p class="text-center">Авторам проектов</p>
+                    </div>
+                    <div class="whom__section-content whom__section-content--small">
+                        <img src="./../img/face/whom_face2.png" alt="face" class="whom_img whom__img-man">                        
+                        <p class="text-center">Предпринимателям</p>
+                    </div>
+                    <div class="whom__section-content whom__section-content--small">
+                        <img src="./../img/face/whom_face1.png" alt="face" class="whom_img">                        
+                        <p class="text-center">Смм-новичкам</p>
+                    </div>
+                    <div class="whom__section-content whom__section-content--small">
+                        <img src="./../img/face/men-notebook.png" alt="face" class="whom_img">                        
+                        <p>Всем, кто хочет прокачать свой аккаунт и начать зарабатывать удаленно</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="form" class="section-form">
+            <div class="container">
+                <div class="form__block-hiden">
+                    <h2 class="form__block-text">Ваша заявка принята!</h2>
+                    <p>Менеджер свяжется с Вами в ближайшее время.</p>
+                    <div class="form__block-img"></div>
+                </div>
+
+                <div class="form__block">
+                    <div class="form__title">
+                        <h2 class="form__section-title">Записаться на курс или получить бесплатную консультацию</h2>
+                    </div>                
+                    <div class="form__wrapper">
+                        <form action="mailer/smart.php" method="POST" class="form">
+                            <input type="text" id="text" autocomplete="off" name="user_name" class="form_name" placeholder="Ваше имя" required>
+                            <input type="tel" id="tel" name="user_phone" class="form-input input-phone form_phone" placeholder="Телефон"  required>
+                            <input type="mail" id="mail" name="user_mail" class="form-input input-phone form_mail" placeholder="e-mail" pattern="[a-zA-Z_]+@[a-zA-Z_]+?.[a-zA-Z]{2,3}" required>
+									
+									<button class="form__btn form-button" type="submit" id="submit">Записаться</button>
+									<div class="form-small">
+                        </form>
+                            
+                    </div>
+                    <p class="form__text">Заполняя форму обратной связи, Вы соглашаетесь на обработку Ваших персональных данных.</p>
+                </div>
+
+                
+            </div>     
+        </section>
+
+        <section class="two__colums">
+            <div class="container">
+                <h2 class="two__colums-title">Как организовано обучение в агентстве «Веб Фокус»?</h2>
+                <div class="two__colums-wrapper">
+                    <div class="two__colums-text">
+                        <p>Занятия по курсу Фейсбук проходит в очной форме. В аудитории занимаются группы по 10 человек. Помещение оборудовано ноутбуками для выполнения практических заданий во время занятий. За каждой группой закреплен куратор, который готов проконсультировать по всем организационным и техническим вопросам.</p>
+                        <p>Программа разработана практикующими специалистами: мы не привлекаем к работе теоретиков. Для освоения методов настройки рекламы в крупнейшей социальной сети Фейсбук, нужно знать механизмы и регулярно следить за тенденциями на рынке рекламы.</p>
+                        <p>Эксперты агентства «Веб Фокус» научат вас запускать таргетированную рекламу в FB. Для начала нужно освоить один из важных моментов продвижения – определение интересов пользователей в рекламном кабинете. Прогадаете в этом вопросе – потеряете деньги.</p>
+                    </div>
+                    <div class="two__colums-text">
+                        <p>Facebook – это социальная сеть, которая следит за пользователями, анализирует поисковые запросы, определяет круг интересов и предлагает то, что интересно человеку.</p>
+                        <p>После нашего образовательного курса вы научитесь настраивать и показывать рекламу продукта или услуги, которая актуальна для пользователя. К примеру, человек планирует покупку недвижимости в Минске, соответственно, вы при запуске таргетированной рекламы в кабинете Фейсбук указываете дома, квартиры и прочую недвижимость в Минске, которую пользователь ищет в данный момент.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info img_margin-bottom">
+            <div class="container">                
+                <div class="info__wrapper">
+                 <h2 class="cursec__smm_duties-title">Пройдя обучение профессии специалист
+                    по рекламе ВКонтакте, вы сможете:</h2>
+                    <div class="smm__duties">
+                        <div class="duties__block">
+                            <div class="duties__block-wrapper">
+                                <div class="courses__duties_block-content-3">
+                                    <p class="regular-16 yellow-text-16">Блок по определению <span>целевой аудитории</span></p>
+                                    <img src="./../img/icon_left/mens.png" alt="img" class="img_right">
+                                </div>
+
+                                <div class="courses__duties_block-content-3">
+                                    <p class="regular-16 yellow-text-16">Блок по изучению <span>инструментов продвижения</span></p>
+                                   <img src="./../img/icon_left/spiker.png" alt="img" class="img_right">
+                                </div>
+
+                                <div class="courses__duties_block-content-3">
+                                    <p class="regular-16 yellow-text-16">Блок по запуску <span>таргетированной рекламы</span></p>
+                                    <img src="./../img/icon_left/cel.png" alt="img" class="img_right">
+                                </div>
+
+                                <div class="courses__duties_block-content-3">
+                                    <p class="regular-16 yellow-text-16">Блок по <span>созданию контента</span> (текст, фото, видео)</p>
+                                    <img src="./../img/icon_left/cinema-3.png" alt="img" class="img_right">
+                                </div>
+                            
+                                <div class="courses__duties_block-content-3">
+                                    <p class="regular-16 yellow-text-16">Блок по освоению навыков <span>комьюнити-менеджмента</span></p>
+                                    <img src="./../img/icon_left/document-2.png" alt="img" class="img_right">
+                                </div>
+
+                                <div class="courses__duties_block-content-3">
+                                    <p class="regular-16 yellow-text-16">Блок по работе <span>с аналитикой</span></p>
+                                    <img src="./../img/icon_left/graffic.png" alt="img" class="img_right">
+                                </div>                                                                
+                            </div>                            
+                        </div>                         
+                    </div>
+                </div>
+
+                <div class="block__ask">
+                    <div class="ask__wrapper">
+                        <div class="ask__content-text">
+                            <h2 class="ask-text">Почему владельцы бизнеса размещают рекламу на этой площадке</h2>
+                            <p>Социальные сети – мощная площадка для продвижения товаров и услуг в интернете. Многие предприниматели и начинающие бизнесмены понимают необходимость создания сайта, интернет-магазина. Но при этом недооценивают возможности портала Facebook и приложения Instagram, которой также принадлежит FB. По данным статистики, именно эти ресурсы помогают привлечь клиентов и организовать переходы на сайт. Поэтому стоит уделять особое внимание продвижению бизнеса именно в социальных сетях.</p>
+                            <p>Образовательный курс Facebook агентства «Веб Фокус» разработан специально для Вас! После окончания курса, Вы научитесь организовывать маркетинговую компанию грамотно и эффективно.</p>
+                        </div>
+                        <div class="ask__text ask__img--facebook">
+                            <p class="ask-text-16">
+                                Наши специалисты соединили в одной программе два мощных направления продвижения: разработка уникального контента и настройка контекстной рекламы.
+                            </p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="after__section">
+            <div class="container">
+                <div class="after__wrapper">
+                   <div class="smm_curses-babble--img--facebook">
+                        <svg class="liquid-button after__liquid-button"
+                        data-force-factor="0.1"
+                        data-layer-1-viscosity="0.5"
+                        data-layer-2-viscosity="0.4"
+                        data-layer-1-mouse-force="400"
+                        data-layer-2-mouse-force="500"
+                        data-layer-1-force-limit="1"
+                        data-layer-2-force-limit="2"
+                        data-color1="#FEBD29"
+                        data-color2="#FEBD29"
+                        data-color3="#FEBD29">
+                    </svg>
+                   </div> 
+                   <div class="after__section-content">
+                        <h2 class="after__section-title">Что мы гарантируем ученикам курса «Обучение продвижению на Фейсбук»?</h2>
+                            <div class="after-content">
+                                <img src="./../img/icon_left/book.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>1. Научитесь выбирать стратегию продвижения в Фейсбук, которая подходит именно вам..</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/100.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>2. Освоите навыки создания вовлекающего контента, который будет работать на вашу целевую аудиторию.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/spiker.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                       
+                                        <p>3. Научитесь привлекать целевую аудиторию, используя эффективные методики.</p>
+                                    </div>                        
+                            </div>
+                            
+                            <div class="after-content">
+                                <img src="./../img/icon_left/top.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>4. Получите четкое понимание целей продвижения в Фейсбук.</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content">
+                                <img src="./../img/icon_left/hends-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>5. Ваша личная страница изменится до неузнаваемости, появятся новые подписчики.</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content">
+                                <img src="./../img/icon_left/mens.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>6. Узнаете, как привлечь клиентов и как мотивировать существующих подписчиков покупать.</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content">
+                                <img src="./../img/icon_left/light.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>7. Поймете, как монетизировать аккаунт, даже при условии, что вы пока только учитесь и еще ничего не продаете.</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content">
+                                <img src="./../img/icon_left/cinema-3.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>8. Мы научим вас создавать и наполнять контентом группы для продвижения в FB.</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content">
+                                <img src="./../img/icon_left/money-2.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>9. Сможете давать платные консультации по работе в Фейсбук, ведь мы готовы рассказать вам все тонкости работы этой социальной площадки.</p>
+                                    </div>                        
+                            </div>                                      
+                            <div class="after-content">
+                                <img src="./../img/icon_left/power.png" alt="img" class="left__img">
+                                    <div class="curses__after-text">                                        
+                                        <p>10. Станете гуру-продаж Facebook!</p>
+                                    </div>                        
+                            </div>                                      
+                </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <h2 class="feedback__title">Отзывы наших выпускников</h2>
+                <div class="feedback__slider">
+                   <div class="feedback__wrapper">
+                       <div class="feedback__text-block">
+                           <div class="feedback__text text-color">
+                            <p class="medium">«После окончания вуза, я долгое время искала работу с достойной зарплатой. Пробовала самостоятельно изучать основы СММ, но это были только теоретические знания. Когда я применяла их на своем профиле в социальных сетях, результата не было. Совсем недавно я узнала про агентство «Веб Фокус» и курсы продвижения Фейсбук. После первых занятий все встало на свои места. Преподаватели не только доходчиво все объясняют, но и помогают применить навыки. Уже в процессе обучения у меня появились первые клиенты и первый заработок. Теперь планирую записаться не курс по продвижению Instagram».</p>
+                           </div>
+                       </div>
+                       <div class="feedback__autor">
+                           <img src="./../img/face/red_girl.png" alt="img" class="feedback__autor-img">
+                           <p class="underline_medium-text"><span>Екатерины Самойлова</span></p>
+                           <p class="medium">27 лет</p>
+                           <p>профессия – эколог</p>
+                       </div>
+                   </div>
+                
+                   <div class="feedback__wrapper">
+                       <div class="feedback__text-block">
+                           <div class="feedback__text-2 text-color">
+                            <p>«Долгое время я зарабатывал фотографией и созданием фото контента. Потом понял, что хочу зарабатывать больше и для развития мне необходимо продвигать себя в социальных сетях. Теперь могу сказать, если вы хотите научиться настраивать таргетированную рекламу в Фейсбуке, создавать креативный контент для рекламных кампаний, анализировать аудиторию, приходите в агентство «Веб Фокус» на курс Фейсбук».</p>
+                           </div>
+                       </div>
+                       <div class="feedback__autor">
+                           <img src="./../img/face/men-notebook-2.png" alt="img" class="feedback__autor-img">
+                           <p class="underline_medium-text"><span>Даниил Чернов</span></p>
+                           <p class="medium">24 года</p>
+                           <p>профессия – фрилансер</p>
+                       </div>
+                   </div>
+                
+
+                
+                   <div class="feedback__wrapper">
+                       <div class="feedback__text-block">
+                           <div class="feedback__text-3 text-color">
+                            <p class="medium">«Долго думал, почему не работает реклама в Фейсбук, а бюджет уходит. После того, как я прошел курсы продвижения Фейсбук, все стало понятно. Была неправильно определена целевая аудитория. Зато теперь я не только сам разбираюсь в тонкостях таргетинга, но и контролирую работу трафик-менеджера, маркетолога и копирайтера».</p>
+                           </div>
+                       </div>
+                       <div class="feedback__autor">
+                           <img src="./../img/face/whom_man.png" alt="img" class="feedback__autor-img">
+                           <p class="underline_medium-text"><span>Василий Колодкин</span></p>
+                           <p class="medium">42 года</p>
+                           <p>профессия – предприниматель</p>
+                       </div>
+                   </div>                 
+                </div>
+            </div>
+        </section>
+
+        <section class="interest__section">
+            <div class="container">
+                <div class="interest__wrapper">
+                    <div class="curses__interest-img">
+                        <svg class="liquid-button"
+                            data-force-factor="0.1"
+                            data-layer-1-viscosity="0.5"
+                            data-layer-2-viscosity="0.4"
+                            data-layer-1-mouse-force="400"
+                            data-layer-2-mouse-force="500"
+                            data-layer-1-force-limit="1"
+                            data-layer-2-force-limit="2"
+                            data-color1="#FEBD29"
+                            data-color2="#FEBD29"
+                            data-color3="#FEBD29">
+                        </svg>
+                    </div>
+                    <div class="interest__block-content">
+                        <p>Если ты думаешь, что можешь записаться на курс завтра, то ошибаешься! Количество мест ограничено. Регистрируйся сейчас, пока не изменились условия участия.</p>
+                        <p class="interest__block-text">Заинтересовались? Заполните заявку и станьте специалистом SMM благодаря нашим курсам.                            
+                        </p>
+                        <div class="section__btn">
+                            <a href="#form" class="button">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footet__block-info">
+                    <p>г. Минск, проспект Независмости 77</p>
+                    <a href="tel:+375291644000" class="footer-phone">+375 (29) 16 44 000</a>
+                    <a href="mail:courses@webfocus.by" class="footer__mail">courses@webfocus.by</a>
+                    <p class="footer__copirate">© 2020 Курсы SMM в Минске</p>
+                    </div>
+                    
+                <div class="footer__block-link">
+                    <a href="#form" class="footer__link-signUp">Записаться</a>
+                    <div class="footer__link-social">
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link__social">
+                            <svg class="link__socials-icon" width="30" height="30">
+                                <use href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="footer__link-map">Карта Сайта</a>
+                    <a href="#" class="footer__link-privacy">Политика конфиденциальности</a>
+                    <p class="footer__copirate-hiden">© 2020 Курсы SMM в Минске</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./../slick/slick.min.js"></script>
+    <script src="./../js/slick.js"></script>
+    <script src="./../js/script.js"></script>
+</body>
+</html>          
